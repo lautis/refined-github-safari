@@ -4,7 +4,13 @@
   "description": "Safari port of refined-github",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "build": "npm run refined-github && npm run copy",
+    "clean": "rm -r Refined\\ Github.safariextension;mkdir Refined\\ Github.safariextension",
+    "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
+    "refined-github:install": "cd refined-github && npm install",
+    "refined-github:build": "cd refined-github && npm run build",
+    "refined-github:copy": "cp refined-github/distribution/* Refined\\ Github.safariextension",
+    "copy": "cp src/* Refined\\ Github.safariextension/"
   },
   "author": "Ville Lautanala <lautis@gmail.com>",
   "license": "ISC"
