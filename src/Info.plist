@@ -21,8 +21,8 @@
 			<key>Start</key>
 			<array>
 				<string>chrome.js</string>
-				<string>intersection-observer.polyfill.js</string>
 				<string>browser-polyfill.min.js</string>
+				<string>intersection-observer.js</string>
 				<string>content.js</string>
 			</array>
 		</dict>

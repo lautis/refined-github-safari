@@ -6,12 +6,17 @@
   "scripts": {
     "build": "npm run refined-github && npm run copy",
     "clean": "rm -r Refined\\ Github.safariextension;mkdir Refined\\ Github.safariextension",
+    "copy:intersection-observer": "cp node_modules/intersection-observer/intersection-observer.js Refined\\ Github.safariextension/",
+    "copy:sources": "cp src/* Refined\\ Github.safariextension/",
+    "copy": "npm run copy:intersection-observer && npm run copy:sources",
     "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
     "refined-github:install": "cd refined-github && npm install",
     "refined-github:build": "cd refined-github && npm run build",
-    "refined-github:copy": "cp refined-github/distribution/* Refined\\ Github.safariextension",
-    "copy": "cp src/* Refined\\ Github.safariextension/"
+    "refined-github:copy": "cp refined-github/distribution/* Refined\\ Github.safariextension"
   },
   "author": "Ville Lautanala <lautis@gmail.com>",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "intersection-observer": "^0.5.0"
+  }
 }
