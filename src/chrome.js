@@ -1,8 +1,10 @@
 // Mock chrome.storage API for Safari
 
-const data = {};
+const data = {
+  options: { disabledFeatures: "show-recently-pushed-branches" }
+};
 
-const getValue = (keys) => {
+const getValue = keys => {
   if (typeof keys === "string") {
     return { [keys]: data[keys] };
   } else if (typeof keys === "array") {
@@ -14,9 +16,9 @@ const getValue = (keys) => {
       .map(([key, value]) => [key, data[key] || value])
       .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {});
   } else {
-    return {...data };
+    return { ...data };
   }
-}
+};
 
 const storage = {
   get(keys, callback) {
@@ -26,13 +28,16 @@ const storage = {
   },
 
   set(values, callback) {
-    Object.entries(values).forEach(([key, value]) => data[key] = value);
+    Object.entries(values).forEach(([key, value]) => (data[key] = value));
     if (callback) callback();
     return Promise.resolve();
   }
 };
 
 browser = chrome = {
+  runtime: {
+    lastError: () => null
+  },
   storage: {
     onChanged: {
       addListener(listener) {}
