@@ -11,7 +11,7 @@
     "copy": "npm run copy:intersection-observer && npm run copy:sources",
     "postcss": "postcss --use postcss-safe-important -o \"Refined Github.safariextension/content.css\" \"Refined\\ Github.safariextension/content.css\"",
     "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
-    "refined-github:install": "cd refined-github && npm install",
+    "refined-github:install": "cd refined-github && npm install --no-package-lock",
     "refined-github:build": "cd refined-github && npm run build",
     "refined-github:copy": "cp refined-github/distribution/* Refined\\ Github.safariextension"
   },
