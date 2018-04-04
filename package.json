@@ -1,0 +1,11 @@
+{
+  "name": "refined-github-safari",
+  "version": "1.0.0",
+  "description": "Safari port of refined-github",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ville Lautanala <lautis@gmail.com>",
+  "license": "ISC"
+}
