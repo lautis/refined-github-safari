@@ -1,0 +1,3 @@
+[submodule "refined-github"]
+	path = refined-github
+	url = https://github.com/sindresorhus/refined-github.git
