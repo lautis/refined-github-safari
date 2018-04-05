@@ -6,7 +6,7 @@ const uniqueId = () =>
     .substr(2, 10);
 
 const storageCalls = new Map();
-const sotrageChangeListeners = [];
+const storageChangeListeners = [];
 
 const respondToMessage = event => {
   if (event.name === "get-response") {

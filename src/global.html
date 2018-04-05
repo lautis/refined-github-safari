@@ -49,42 +49,44 @@
     const writeLocalStorage = (namespace, data) =>
       localStorage.setItem(localStorageKey(namespace), JSON.stringify(data));
 
-    const respondGet = (event) => {
+    const respondGet = event => {
       const data = readLocalStorage(event.message.namespace);
       const value = getValue(data, event.message.keys);
-      event.target.page.dispatchMessage("get-response", { id: event.message.id, value });
+      event.target.page.dispatchMessage("get-response", {
+        id: event.message.id,
+        value
+      });
     };
 
-    const respondSet = (event) => {
+    const respondSet = event => {
       const data = readLocalStorage(event.message.namespace);
-      Object.entries(event.message.values).forEach(([key, value]) => (data[key] = value));
+      const oldValue = { ...data };
+      Object.entries(event.message.values).forEach(
+        ([key, value]) => (data[key] = value)
+      );
       event.target.page.dispatchMessage("set-response", { id: event.message.id });
+      sendChangeToAllTabs(changes(oldValue, data), event.message.namespace);
     };
 
-    const respond = (event) => {
+    const respond = event => {
       if (event.name === "get") {
         respondGet(event);
       } else if (event.name === "set") {
         respondSet(event);
       }
-    }
+    };
 
     const sendChangeToAllTabs = (diff, namespace) => {
-      safari.self.tabs.forEach(tab => {
-        tab.page.dispatchMessage("storage-change", { changes: diff, namespace });
-      }).page
+      safari.application.browserWindows.forEach(browserWindow => {
+        browserWindow.tabs.forEach(tab => {
+          if (tab.url && tab.url.includes("github.com")) {
+            tab.page.dispatchMessage("storage-change", { changes: diff, namespace });
+          }
+        });
+      });
+    };
 
-
-    }
-
-    safari.application.addEventListener("message", respond,false);
-
-    window.addEventListener("storage", event => {
-      if (event.key.startsWith("refined-github:")) {
-        const namespace = event.key.split(":", 2)[1];
-        sendChangeToAllTabs(JSON.parse(event.oldValue), JSON.parse(event.newValue), namespace);
-      }
-    });
+    safari.application.addEventListener("message", respond, false);
   </script>
 </head>
 </html>
