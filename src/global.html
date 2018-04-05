@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <title>global page</title>
+  <script type="text/javascript">
+    const changes = (oldValue, newValue) => {
+      return Object.keys(newValue).reduce((diff, key) => {
+        if (oldValue[key] === newValue[key]) {
+          return diff;
+        }
+
+        return {
+          ...diff,
+          [key]: { oldValue: oldValue[key], newValue: newValue[key] }
+        };
+      }, {});
+    };
+
+    const getValue = (data, keys) => {
+      if (typeof keys === "string") {
+        return { [keys]: data[keys] };
+      } else if (typeof keys === "array") {
+        return keys
+          .map(key => [key, data[key]])
+          .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {});
+      } else if (typeof keys === "object") {
+        return Object.entries(keys)
+          .map(([key, value]) => [key, data[key] || value])
+          .reduce((obj, [key, value]) => ({ ...obj, [key]: value }), {});
+      } else {
+        return { ...data };
+      }
+    };
+
+    const safeParse = data => {
+      try {
+        const parsed = JSON.parse(data) || {};
+        parsed.options = parsed.options || {};
+        parsed.options.disabledFeatures = parsed.options.disabledFeatures || "show-recently-pushed-branches";
+        return parsed;
+      } catch {
+        return {};
+      }
+    };
+
+    const localStorageKey = namespace => `refined-github:${namespace}`;
+    const readLocalStorage = namespace =>
+      safeParse(localStorage.getItem(localStorageKey(namespace)));
+    const writeLocalStorage = (namespace, data) =>
+      localStorage.setItem(localStorageKey(namespace), JSON.stringify(data));
+
+    const respondGet = (event) => {
+      const data = readLocalStorage(event.message.namespace);
+      const value = getValue(data, event.message.keys);
+      event.target.page.dispatchMessage("get-response", { id: event.message.id, value });
+    };
+
+    const respondSet = (event) => {
+      const data = readLocalStorage(event.message.namespace);
+      Object.entries(event.message.values).forEach(([key, value]) => (data[key] = value));
+      event.target.page.dispatchMessage("set-response", { id: event.message.id });
+    };
+
+    const respond = (event) => {
+      if (event.name === "get") {
+        respondGet(event);
+      } else if (event.name === "set") {
+        respondSet(event);
+      }
+    }
+
+    const sendChangeToAllTabs = (diff, namespace) => {
+      safari.self.tabs.forEach(tab => {
+        tab.page.dispatchMessage("storage-change", { changes: diff, namespace });
+      }).page
+
+
+    }
+
+    safari.application.addEventListener("message", respond,false);
+
+    window.addEventListener("storage", event => {
+      if (event.key.startsWith("refined-github:")) {
+        const namespace = event.key.split(":", 2)[1];
+        sendChangeToAllTabs(JSON.parse(event.oldValue), JSON.parse(event.newValue), namespace);
+      }
+    });
+  </script>
+</head>
+</html>

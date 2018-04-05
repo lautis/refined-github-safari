@@ -18,6 +18,8 @@
 	<dict>
 		<key>Database Quota</key>
 		<integer>10485760</integer>
+		<key>Global Page</key>
+		<string>global.html</string>
 	</dict>
 	<key>Content</key>
 	<dict>
