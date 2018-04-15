@@ -4,7 +4,7 @@
   "description": "Safari port of refined-github",
   "main": "index.js",
   "scripts": {
-    "build": "npm run clean && npm run refined-github && npm run copy && npm run postcss",
+    "build": "npm run clean && npm run refined-github && npm run copy",
     "clean": "rm -r Refined\\ Github.safariextension;mkdir Refined\\ Github.safariextension",
     "copy:intersection-observer": "cp node_modules/intersection-observer/intersection-observer.js Refined\\ Github.safariextension/",
     "copy:sources": "cp src/* Refined\\ Github.safariextension/",
@@ -22,7 +22,5 @@
     "intersection-observer": "^0.5.0"
   },
   "devDependencies": {
-    "postcss-cli": "^5.0.0",
-    "postcss-safe-important": "^1.1.0"
   }
 }

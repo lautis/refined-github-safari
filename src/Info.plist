@@ -29,6 +29,10 @@
 	<dict>
 		<key>Scripts</key>
 		<dict>
+			<key>End</key>
+			<array>
+				<string>styles.js</string>
+			</array>
 			<key>Start</key>
 			<array>
 				<string>chrome.js</string>
