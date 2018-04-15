@@ -5,7 +5,7 @@
 	<key>Author</key>
 	<string>Ville Lautanala</string>
 	<key>Builder Version</key>
-	<string>13604.5.6</string>
+	<string>13605.1.33.1.2</string>
 	<key>CFBundleDisplayName</key>
 	<string>Refined Github</string>
 	<key>CFBundleIdentifier</key>
@@ -15,7 +15,7 @@
 	<key>CFBundleShortVersionString</key>
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
-	<string>1</string>
+	<string>1.0</string>
 	<key>Chrome</key>
 	<dict>
 		<key>Database Quota</key>
@@ -23,6 +23,8 @@
 		<key>Global Page</key>
 		<string>global.html</string>
 	</dict>
+	<key>Companion Bundle Identifier</key>
+	<array/>
 	<key>Content</key>
 	<dict>
 		<key>Scripts</key>
@@ -43,7 +45,7 @@
 	<key>Description</key>
 	<string>Browser extension that simplifies the GitHub interface and adds useful features</string>
 	<key>DeveloperIdentifier</key>
-	<string>0000000000</string>
+	<string>KETPJB4C67</string>
 	<key>ExtensionInfoDictionaryVersion</key>
 	<string>1.0</string>
 	<key>Permissions</key>
@@ -61,6 +63,8 @@
 			<string>Some</string>
 		</dict>
 	</dict>
+	<key>Update Manifest URL</key>
+	<string>https://github.com/lautis/refined-github/raw/latest/Update.plist</string>
 	<key>Website</key>
 	<string>https://github.com/lautis/refined-github-safari</string>
 </dict>
