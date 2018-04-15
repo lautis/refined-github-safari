@@ -41,10 +41,6 @@
 				<string>content.js</string>
 			</array>
 		</dict>
-		<key>Stylesheets</key>
-		<array>
-			<string>content.css</string>
-		</array>
 	</dict>
 	<key>Description</key>
 	<string>Browser extension that simplifies the GitHub interface and adds useful features</string>
