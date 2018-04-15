@@ -6,7 +6,7 @@ This is a Safari version of [Refined GitHub](https://github.com/sindresorhus/ref
 
 ## Install
 
-No built extensions available. See [Development](#development) section for instructions.
+[Download latest release](https://github.com/lautis/refined-github-safari/releases)
 
 ## Development
 
