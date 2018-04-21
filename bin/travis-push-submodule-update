@@ -15,5 +15,4 @@ git commit -m "Update refined-github"
 git --no-pager log -1
 
 git remote add deploy git@github.com:lautis/refined-github-safari.git
-git fetch deploy
-git push deploy autoupdate-submodule-debug
+git push deploy HEAD:autoupdate-submodule-debug
