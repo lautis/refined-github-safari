@@ -16,5 +16,7 @@ ssh-add .travis/deploy-key
 git add refined-github
 git commit -m "Update refined-github"
 
+git --no-pager log -1
+
 git remote add deploy git@github.com:lautis/refined-github-safari.git
 git push deploy master
