@@ -5,14 +5,16 @@ export GIT_AUTHOR_EMAIL="submodule-updater@lautanala.fi"
 export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
 export GIT_COMMITTER_EMAIL=$GIT_AUTHOR_EMAIL
 
-eval "$(ssh-agent -s)"
-chmod 600 .travis/deploy-key
-ssh-add .travis/deploy-key
+if ! $(git diff --quiet && git diff --cached --quiet) ; then
+  eval "$(ssh-agent -s)"
+  chmod 600 .travis/deploy-key
+  ssh-add .travis/deploy-key
 
-git add refined-github
-git commit -m "Update refined-github"
+  git add refined-github
+  git commit -m "Update refined-github"
 
-git --no-pager log -1
+  git --no-pager log -1
 
-git remote add deploy git@github.com:lautis/refined-github-safari.git
-git push deploy HEAD:autoupdate-submodule-debug
+  git remote add deploy git@github.com:lautis/refined-github-safari.git
+  git push deploy HEAD:autoupdate-submodule-debug
+fi
