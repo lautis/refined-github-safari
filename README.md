@@ -30,5 +30,5 @@ will build the extension files to "Refined Gituhub.safariextension" directory. T
 
 This repository is not the first attempt to create a Safari version of Refined GitHub. There are at least two other similar projects:
 
-* [Safari wrapper by @fantattitude](https://github.com/fantattitude/refined-github-safari) - last updated in 2016
-* [Safari fork by @mathieudutour](https://github.com/mathieudutour/refined-github-safari) - almost up to date, but conflicts make it hard to maintaint it
+* [Safari wrapper by @fantattitude](https://github.com/fantattitude/refined-github-safari) - Last updated in 2016.
+* [Safari fork by @mathieudutour](https://github.com/mathieudutour/refined-github-safari) - Updated in November 2017, but conflicts prevent updating. Published to Safari Extension Gallery.
