@@ -1,9 +1,5 @@
 #!/bin/sh
 
-if [[ "$TRAVIS_EVENT_TYPE" != "cron" ]]; then
-  exit 0
-fi
-
 export GIT_AUTHOR_NAME="Submodule Updater"
 export GIT_AUTHOR_EMAIL="submodule-updater@lautanala.fi"
 export GIT_COMMITTER_NAME=$GIT_AUTHOR_NAME
@@ -19,4 +15,4 @@ git commit -m "Update refined-github"
 git --no-pager log -1
 
 git remote add deploy git@github.com:lautis/refined-github-safari.git
-git push deploy master
+git push deploy autoupdate-submodule-debug
