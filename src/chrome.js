@@ -49,6 +49,9 @@ const storage = namespace => {
 
 browser = chrome = {
   runtime: {
+    sendMessage(message) {
+      safari.self.tab.dispatchMessage("message", message);
+    },
     lastError: () => null
   },
   storage: {

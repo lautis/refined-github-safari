@@ -83,11 +83,25 @@
       sendChangeToAllTabs(changes(oldValue, data), event.message.namespace);
     };
 
+    const respondMessage = async (message) => {
+    	if (!message || message.action !== 'openAllInTabs') {
+    		return;
+    	}
+      const activeWindow = safari.application.activeBrowserWindow;
+      const currentTabIndex = activeWindow.tabs.indexOf(activeWindow.activeTab);
+      for (const [i, url] of message.urls.entries()) {
+        const tab = safari.application.activeBrowserWindow.openTab("background", currentTabIndex + i + 1);
+        tab.url = url;
+      }
+    };
+
     const respond = event => {
       if (event.name === "get") {
         respondGet(event);
       } else if (event.name === "set") {
         respondSet(event);
+      } else if (event.name === "message") {
+        respondMessage(event.message);
       }
     };
 
