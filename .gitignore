@@ -63,7 +63,7 @@ typings/
 build
 
 xcuserdata/
-Refined Github Extension/browser-polyfill.min.js
-Refined Github Extension/content.js
-Refined Github Extension/content.css
-Refined Github Extension/intersection-observer.js
+Refined GitHub Extension/browser-polyfill.min.js
+Refined GitHub Extension/content.js
+Refined GitHub Extension/content.css
+Refined GitHub Extension/intersection-observer.js

@@ -1,4 +1,4 @@
-# Refined Github for Safari
+# Refined GitHub for Safari
 
 > Browser extension that simplifies the GitHub interface and adds useful features
 
@@ -24,9 +24,9 @@ After this, running
 npm run build
 ```
 
-will build the required JS file to "Refined Gituhub Extension" directory.
+will build the required JS file to "Refined GitHub Extension" directory.
 
-Then, build Refined Github.app with
+Then, build Refined GitHub for Safari.app with
 
 ```
 xcodebuild

@@ -1,6 +1,6 @@
 //
 //  SafariExtensionHandler.swift
-//  Refined Github Extension
+//  Refined GitHub for Safari Extension
 //
 //  Created by Ville Lautanala on 17/02/2019.
 //  Copyright © 2019 Ville Lautanala. All rights reserved.

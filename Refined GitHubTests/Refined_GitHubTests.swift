@@ -1,15 +1,15 @@
 //
-//  Refined_GithubTests.swift
-//  Refined GithubTests
+//  Refined_GitHubTests.swift
+//  Refined GitHubTests
 //
 //  Created by Ville Lautanala on 17/02/2019.
 //  Copyright © 2019 Ville Lautanala. All rights reserved.
 //
 
 import XCTest
-@testable import Refined_Github
+@testable import Refined_GitHub_for_Safari
 
-class Refined_GithubTests: XCTestCase {
+class Refined_GitHubTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.

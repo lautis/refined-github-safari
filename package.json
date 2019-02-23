@@ -5,12 +5,12 @@
   "main": "index.js",
   "scripts": {
     "build": "npm run refined-github && npm run copy",
-    "copy:intersection-observer": "cp node_modules/intersection-observer/intersection-observer.js Refined\\ Github\\ Extension/",
+    "copy:intersection-observer": "cp node_modules/intersection-observer/intersection-observer.js Refined\\ GitHub\\ Extension/",
     "copy": "npm run copy:intersection-observer",
     "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
     "refined-github:install": "cd refined-github && npm install --no-package-lock",
     "refined-github:build": "cd refined-github && npm run build",
-    "refined-github:copy": "cp refined-github/distribution/content.css Refined\\ Github\\ Extension/;cp refined-github/distribution/browser-polyfill.min.js Refined\\ Github\\ Extension/; cp refined-github/distribution/content.js Refined\\ Github\\ Extension/",
+    "refined-github:copy": "cp refined-github/distribution/content.css Refined\\ GitHub\\ Extension/;cp refined-github/distribution/browser-polyfill.min.js Refined\\ GitHub\\ Extension/; cp refined-github/distribution/content.js Refined\\ GitHub\\ Extension/",
     "refined-github:update": "cd refined-github;git fetch;git checkout origin/master"
   },
   "author": "Ville Lautanala <lautis@gmail.com>",

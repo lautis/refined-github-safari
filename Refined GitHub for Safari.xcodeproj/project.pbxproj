@@ -8,14 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
-		76E22A4A221A414C00C30087 /* Refined_Github.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_Github.entitlements */; };
+		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
 		76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A4B221A414C00C30087 /* AppDelegate.swift */; };
 		76E22A4F221A414C00C30087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A4D221A414C00C30087 /* Main.storyboard */; };
 		76E22A51221A414C00C30087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A50221A414C00C30087 /* ViewController.swift */; };
 		76E22A53221A414E00C30087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A52221A414E00C30087 /* Assets.xcassets */; };
-		76E22A5E221A414E00C30087 /* Refined_GithubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A5D221A414E00C30087 /* Refined_GithubTests.swift */; };
-		76E22A69221A414E00C30087 /* Refined_GithubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A68221A414E00C30087 /* Refined_GithubUITests.swift */; };
-		76E22A70221A414E00C30087 /* Refined Github Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76E22A6F221A414E00C30087 /* Refined Github Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		76E22A5E221A414E00C30087 /* Refined_GitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A5D221A414E00C30087 /* Refined_GitHubTests.swift */; };
+		76E22A69221A414E00C30087 /* Refined_GitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A68221A414E00C30087 /* Refined_GitHubUITests.swift */; };
+		76E22A70221A414E00C30087 /* Refined GitHub for Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		76E22A75221A414E00C30087 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E22A74221A414E00C30087 /* Cocoa.framework */; };
 		76E22A78221A414E00C30087 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */; };
 		76E22A94221A44C000C30087 /* intersection-observer.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A93221A44BF00C30087 /* intersection-observer.js */; };
@@ -32,21 +32,21 @@
 			containerPortal = 76E22A3E221A414B00C30087 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 76E22A45221A414B00C30087;
-			remoteInfo = "Refined Github";
+			remoteInfo = "Refined GitHub for Safari";
 		};
 		76E22A65221A414E00C30087 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 76E22A3E221A414B00C30087 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 76E22A45221A414B00C30087;
-			remoteInfo = "Refined Github";
+			remoteInfo = "Refined GitHub for Safari";
 		};
 		76E22A71221A414E00C30087 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 76E22A3E221A414B00C30087 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 76E22A6E221A414E00C30087;
-			remoteInfo = "Refined Github Extension";
+			remoteInfo = "Refined GitHub for Safari Extension";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -57,7 +57,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				76E22A70221A414E00C30087 /* Refined Github Extension.appex in Embed App Extensions */,
+				76E22A70221A414E00C30087 /* Refined GitHub for Safari Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -66,24 +66,24 @@
 
 /* Begin PBXFileReference section */
 		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		76E22A46221A414C00C30087 /* Refined Github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined Github.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A49221A414C00C30087 /* Refined_Github.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_Github.entitlements; sourceTree = "<group>"; };
+		76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined GitHub for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub.entitlements; sourceTree = "<group>"; };
 		76E22A4B221A414C00C30087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		76E22A4E221A414C00C30087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		76E22A50221A414C00C30087 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		76E22A52221A414E00C30087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		76E22A54221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A59221A414E00C30087 /* Refined GithubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refined GithubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A5D221A414E00C30087 /* Refined_GithubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refined_GithubTests.swift; sourceTree = "<group>"; };
+		76E22A59221A414E00C30087 /* Refined GitHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refined GitHubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E22A5D221A414E00C30087 /* Refined_GitHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refined_GitHubTests.swift; sourceTree = "<group>"; };
 		76E22A5F221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A64221A414E00C30087 /* Refined GithubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refined GithubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A68221A414E00C30087 /* Refined_GithubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refined_GithubUITests.swift; sourceTree = "<group>"; };
+		76E22A64221A414E00C30087 /* Refined GitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refined GitHubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E22A68221A414E00C30087 /* Refined_GitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refined_GitHubUITests.swift; sourceTree = "<group>"; };
 		76E22A6A221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A6F221A414E00C30087 /* Refined Github Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Refined Github Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Refined GitHub for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E22A74221A414E00C30087 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		76E22A7E221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A83221A414E00C30087 /* Refined_Github_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_Github_Extension.entitlements; sourceTree = "<group>"; };
+		76E22A83221A414E00C30087 /* Refined_GitHub_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub_Extension.entitlements; sourceTree = "<group>"; };
 		76E22A93221A44BF00C30087 /* intersection-observer.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "intersection-observer.js"; sourceTree = "<group>"; };
 		76E22A95221A45F900C30087 /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
 		76E22A97221B9A4E00C30087 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
@@ -136,10 +136,10 @@
 		76E22A3D221A414B00C30087 = {
 			isa = PBXGroup;
 			children = (
-				76E22A48221A414C00C30087 /* Refined Github */,
-				76E22A5C221A414E00C30087 /* Refined GithubTests */,
-				76E22A67221A414E00C30087 /* Refined GithubUITests */,
-				76E22A76221A414E00C30087 /* Refined Github Extension */,
+				76E22A48221A414C00C30087 /* Refined GitHub */,
+				76E22A5C221A414E00C30087 /* Refined GitHubTests */,
+				76E22A67221A414E00C30087 /* Refined GitHubUITests */,
+				76E22A76221A414E00C30087 /* Refined GitHub Extension */,
 				76E22A73221A414E00C30087 /* Frameworks */,
 				76E22A47221A414C00C30087 /* Products */,
 			);
@@ -148,44 +148,44 @@
 		76E22A47221A414C00C30087 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76E22A46221A414C00C30087 /* Refined Github.app */,
-				76E22A59221A414E00C30087 /* Refined GithubTests.xctest */,
-				76E22A64221A414E00C30087 /* Refined GithubUITests.xctest */,
-				76E22A6F221A414E00C30087 /* Refined Github Extension.appex */,
+				76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */,
+				76E22A59221A414E00C30087 /* Refined GitHubTests.xctest */,
+				76E22A64221A414E00C30087 /* Refined GitHubUITests.xctest */,
+				76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76E22A48221A414C00C30087 /* Refined Github */ = {
+		76E22A48221A414C00C30087 /* Refined GitHub */ = {
 			isa = PBXGroup;
 			children = (
 				767D0344222184810025A3B7 /* Resources */,
-				76E22A49221A414C00C30087 /* Refined_Github.entitlements */,
+				76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */,
 				76E22A4B221A414C00C30087 /* AppDelegate.swift */,
 				76E22A4D221A414C00C30087 /* Main.storyboard */,
 				76E22A50221A414C00C30087 /* ViewController.swift */,
 				76E22A52221A414E00C30087 /* Assets.xcassets */,
 				76E22A54221A414E00C30087 /* Info.plist */,
 			);
-			path = "Refined Github";
+			path = "Refined GitHub";
 			sourceTree = "<group>";
 		};
-		76E22A5C221A414E00C30087 /* Refined GithubTests */ = {
+		76E22A5C221A414E00C30087 /* Refined GitHubTests */ = {
 			isa = PBXGroup;
 			children = (
-				76E22A5D221A414E00C30087 /* Refined_GithubTests.swift */,
+				76E22A5D221A414E00C30087 /* Refined_GitHubTests.swift */,
 				76E22A5F221A414E00C30087 /* Info.plist */,
 			);
-			path = "Refined GithubTests";
+			path = "Refined GitHubTests";
 			sourceTree = "<group>";
 		};
-		76E22A67221A414E00C30087 /* Refined GithubUITests */ = {
+		76E22A67221A414E00C30087 /* Refined GitHubUITests */ = {
 			isa = PBXGroup;
 			children = (
-				76E22A68221A414E00C30087 /* Refined_GithubUITests.swift */,
+				76E22A68221A414E00C30087 /* Refined_GitHubUITests.swift */,
 				76E22A6A221A414E00C30087 /* Info.plist */,
 			);
-			path = "Refined GithubUITests";
+			path = "Refined GitHubUITests";
 			sourceTree = "<group>";
 		};
 		76E22A73221A414E00C30087 /* Frameworks */ = {
@@ -196,7 +196,7 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		76E22A76221A414E00C30087 /* Refined Github Extension */ = {
+		76E22A76221A414E00C30087 /* Refined GitHub Extension */ = {
 			isa = PBXGroup;
 			children = (
 				76E22A95221A45F900C30087 /* content.css */,
@@ -207,17 +207,17 @@
 				76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */,
 				76E22A93221A44BF00C30087 /* intersection-observer.js */,
 				76E22A7E221A414E00C30087 /* Info.plist */,
-				76E22A83221A414E00C30087 /* Refined_Github_Extension.entitlements */,
+				76E22A83221A414E00C30087 /* Refined_GitHub_Extension.entitlements */,
 			);
-			path = "Refined Github Extension";
+			path = "Refined GitHub Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76E22A45221A414B00C30087 /* Refined Github */ = {
+		76E22A45221A414B00C30087 /* Refined GitHub for Safari */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A8A221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined Github" */;
+			buildConfigurationList = 76E22A8A221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari" */;
 			buildPhases = (
 				76E22A42221A414B00C30087 /* Sources */,
 				76E22A43221A414B00C30087 /* Frameworks */,
@@ -229,14 +229,14 @@
 			dependencies = (
 				76E22A72221A414E00C30087 /* PBXTargetDependency */,
 			);
-			name = "Refined Github";
-			productName = "Refined Github";
-			productReference = 76E22A46221A414C00C30087 /* Refined Github.app */;
+			name = "Refined GitHub for Safari";
+			productName = "Refined GitHub for Safari";
+			productReference = 76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */;
 			productType = "com.apple.product-type.application";
 		};
-		76E22A58221A414E00C30087 /* Refined GithubTests */ = {
+		76E22A58221A414E00C30087 /* Refined GitHubTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A8D221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GithubTests" */;
+			buildConfigurationList = 76E22A8D221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubTests" */;
 			buildPhases = (
 				76E22A55221A414E00C30087 /* Sources */,
 				76E22A56221A414E00C30087 /* Frameworks */,
@@ -247,14 +247,14 @@
 			dependencies = (
 				76E22A5B221A414E00C30087 /* PBXTargetDependency */,
 			);
-			name = "Refined GithubTests";
-			productName = "Refined GithubTests";
-			productReference = 76E22A59221A414E00C30087 /* Refined GithubTests.xctest */;
+			name = "Refined GitHubTests";
+			productName = "Refined GitHubTests";
+			productReference = 76E22A59221A414E00C30087 /* Refined GitHubTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		76E22A63221A414E00C30087 /* Refined GithubUITests */ = {
+		76E22A63221A414E00C30087 /* Refined GitHubUITests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A90221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GithubUITests" */;
+			buildConfigurationList = 76E22A90221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubUITests" */;
 			buildPhases = (
 				76E22A60221A414E00C30087 /* Sources */,
 				76E22A61221A414E00C30087 /* Frameworks */,
@@ -265,14 +265,14 @@
 			dependencies = (
 				76E22A66221A414E00C30087 /* PBXTargetDependency */,
 			);
-			name = "Refined GithubUITests";
-			productName = "Refined GithubUITests";
-			productReference = 76E22A64221A414E00C30087 /* Refined GithubUITests.xctest */;
+			name = "Refined GitHubUITests";
+			productName = "Refined GitHubUITests";
+			productReference = 76E22A64221A414E00C30087 /* Refined GitHubUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
-		76E22A6E221A414E00C30087 /* Refined Github Extension */ = {
+		76E22A6E221A414E00C30087 /* Refined GitHub for Safari Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A86221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined Github Extension" */;
+			buildConfigurationList = 76E22A86221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari Extension" */;
 			buildPhases = (
 				76E22A6B221A414E00C30087 /* Sources */,
 				76E22A6C221A414E00C30087 /* Frameworks */,
@@ -282,9 +282,9 @@
 			);
 			dependencies = (
 			);
-			name = "Refined Github Extension";
-			productName = "Refined Github Extension";
-			productReference = 76E22A6F221A414E00C30087 /* Refined Github Extension.appex */;
+			name = "Refined GitHub for Safari Extension";
+			productName = "Refined GitHub for Safari Extension";
+			productReference = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
@@ -313,7 +313,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined Github" */;
+			buildConfigurationList = 76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined GitHub for Safari" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -326,10 +326,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76E22A45221A414B00C30087 /* Refined Github */,
-				76E22A58221A414E00C30087 /* Refined GithubTests */,
-				76E22A63221A414E00C30087 /* Refined GithubUITests */,
-				76E22A6E221A414E00C30087 /* Refined Github Extension */,
+				76E22A45221A414B00C30087 /* Refined GitHub for Safari */,
+				76E22A58221A414E00C30087 /* Refined GitHubTests */,
+				76E22A63221A414E00C30087 /* Refined GitHubUITests */,
+				76E22A6E221A414E00C30087 /* Refined GitHub for Safari Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -339,7 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E22A4A221A414C00C30087 /* Refined_Github.entitlements in Resources */,
+				76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */,
 				767D0346222184FA0025A3B7 /* Credits.html in Resources */,
 				76E22A53221A414E00C30087 /* Assets.xcassets in Resources */,
 				76E22A4F221A414C00C30087 /* Main.storyboard in Resources */,
@@ -389,7 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E22A5E221A414E00C30087 /* Refined_GithubTests.swift in Sources */,
+				76E22A5E221A414E00C30087 /* Refined_GitHubTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -397,7 +397,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E22A69221A414E00C30087 /* Refined_GithubUITests.swift in Sources */,
+				76E22A69221A414E00C30087 /* Refined_GitHubUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -414,17 +414,17 @@
 /* Begin PBXTargetDependency section */
 		76E22A5B221A414E00C30087 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76E22A45221A414B00C30087 /* Refined Github */;
+			target = 76E22A45221A414B00C30087 /* Refined GitHub for Safari */;
 			targetProxy = 76E22A5A221A414E00C30087 /* PBXContainerItemProxy */;
 		};
 		76E22A66221A414E00C30087 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76E22A45221A414B00C30087 /* Refined Github */;
+			target = 76E22A45221A414B00C30087 /* Refined GitHub for Safari */;
 			targetProxy = 76E22A65221A414E00C30087 /* PBXContainerItemProxy */;
 		};
 		76E22A72221A414E00C30087 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76E22A6E221A414E00C30087 /* Refined Github Extension */;
+			target = 76E22A6E221A414E00C30087 /* Refined GitHub for Safari Extension */;
 			targetProxy = 76E22A71221A414E00C30087 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -560,11 +560,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				CODE_SIGN_ENTITLEMENTS = "Refined Github Extension/Refined_Github_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KETPJB4C67;
-				INFOPLIST_FILE = "Refined Github Extension/Info.plist";
+				INFOPLIST_FILE = "Refined GitHub Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -582,11 +582,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-2";
-				CODE_SIGN_ENTITLEMENTS = "Refined Github Extension/Refined_Github_Extension.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = KETPJB4C67;
-				INFOPLIST_FILE = "Refined Github Extension/Info.plist";
+				INFOPLIST_FILE = "Refined GitHub Extension/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -605,12 +605,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Refined Github/Refined_Github.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub/Refined_GitHub.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KETPJB4C67;
-				INFOPLIST_FILE = "Refined Github/Info.plist";
+				INFOPLIST_FILE = "Refined GitHub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -627,12 +627,12 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Refined Github/Refined_Github.entitlements";
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub/Refined_GitHub.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				DEVELOPMENT_TEAM = KETPJB4C67;
-				INFOPLIST_FILE = "Refined Github/Info.plist";
+				INFOPLIST_FILE = "Refined GitHub/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
@@ -651,16 +651,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Refined GithubTests/Info.plist";
+				INFOPLIST_FILE = "Refined GitHubTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GithubTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined Github.app/Contents/MacOS/Refined Github";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined GitHub.app/Contents/MacOS/Refined GitHub for Safari";
 			};
 			name = Debug;
 		};
@@ -671,16 +671,16 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Refined GithubTests/Info.plist";
+				INFOPLIST_FILE = "Refined GitHubTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GithubTests";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined Github.app/Contents/MacOS/Refined Github";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined GitHub.app/Contents/MacOS/Refined GitHub for Safari";
 			};
 			name = Release;
 		};
@@ -690,16 +690,16 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Refined GithubUITests/Info.plist";
+				INFOPLIST_FILE = "Refined GitHubUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GithubUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Refined Github";
+				TEST_TARGET_NAME = "Refined GitHub for Safari";
 			};
 			name = Debug;
 		};
@@ -709,23 +709,23 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				INFOPLIST_FILE = "Refined GithubUITests/Info.plist";
+				INFOPLIST_FILE = "Refined GitHubUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 					"@loader_path/../Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GithubUITests";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.2;
-				TEST_TARGET_NAME = "Refined Github";
+				TEST_TARGET_NAME = "Refined GitHub for Safari";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined Github" */ = {
+		76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined GitHub for Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E22A84221A414E00C30087 /* Debug */,
@@ -734,7 +734,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E22A86221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined Github Extension" */ = {
+		76E22A86221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E22A87221A414E00C30087 /* Debug */,
@@ -743,7 +743,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E22A8A221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined Github" */ = {
+		76E22A8A221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E22A8B221A414E00C30087 /* Debug */,
@@ -752,7 +752,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E22A8D221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GithubTests" */ = {
+		76E22A8D221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E22A8E221A414E00C30087 /* Debug */,
@@ -761,7 +761,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E22A90221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GithubUITests" */ = {
+		76E22A90221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				76E22A91221A414E00C30087 /* Debug */,
