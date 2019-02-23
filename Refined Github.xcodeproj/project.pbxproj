@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
 		76E22A4A221A414C00C30087 /* Refined_Github.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_Github.entitlements */; };
 		76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A4B221A414C00C30087 /* AppDelegate.swift */; };
 		76E22A4F221A414C00C30087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A4D221A414C00C30087 /* Main.storyboard */; };
@@ -64,6 +65,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		76E22A46221A414C00C30087 /* Refined Github.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined Github.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E22A49221A414C00C30087 /* Refined_Github.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_Github.entitlements; sourceTree = "<group>"; };
 		76E22A4B221A414C00C30087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +125,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		767D0344222184810025A3B7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				767D0345222184FA0025A3B7 /* Credits.html */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 		76E22A3D221A414B00C30087 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +159,7 @@
 		76E22A48221A414C00C30087 /* Refined Github */ = {
 			isa = PBXGroup;
 			children = (
+				767D0344222184810025A3B7 /* Resources */,
 				76E22A49221A414C00C30087 /* Refined_Github.entitlements */,
 				76E22A4B221A414C00C30087 /* AppDelegate.swift */,
 				76E22A4D221A414C00C30087 /* Main.storyboard */,
@@ -329,6 +340,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E22A4A221A414C00C30087 /* Refined_Github.entitlements in Resources */,
+				767D0346222184FA0025A3B7 /* Credits.html in Resources */,
 				76E22A53221A414E00C30087 /* Assets.xcassets in Resources */,
 				76E22A4F221A414C00C30087 /* Main.storyboard in Resources */,
 			);
