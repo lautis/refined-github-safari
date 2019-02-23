@@ -28,12 +28,11 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         
         let data = self.readLocalStorage(namespace: namespace)
         let value = self.getValues(data: data, keys: keys)
-        NSLog("Respond get with (\(value))")
         
         if let id = payload["id"] as? String {
             page.dispatchMessageToScript(withName: "get-response", userInfo: [
                 "id": id,
-                "value": data
+                "value": value
                 ])
         }
     }
