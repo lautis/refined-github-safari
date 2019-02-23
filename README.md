@@ -24,11 +24,21 @@ After this, running
 npm run build
 ```
 
-will build the extension files to "Refined Gituhub.safariextension" directory. This directory can be loaded with [Extension Builder](https://developer.apple.com/library/content/documentation/Tools/Conceptual/SafariExtensionGuide/UsingExtensionBuilder/UsingExtensionBuilder.html) to Safari.
+will build the required JS file to "Refined Gituhub Extension" directory.
+
+Then, build Refined Github.app with
+
+```
+xcodebuild
+```
+
+The built app will be located in build/Release.
 
 ## Alternatives
 
 This repository is not the first attempt to create a Safari version of Refined GitHub. There are at least two other similar projects:
 
-* [Safari wrapper by @fantattitude](https://github.com/fantattitude/refined-github-safari) - Last updated in 2016.
-* [Safari fork by @mathieudutour](https://github.com/mathieudutour/refined-github-safari) - Updated in November 2017, but conflicts prevent updating. Published to Safari Extension Gallery.
+* [Safari wrapper by @fantattitude](https://github.com/fantattitude/refined-github-safari)
+* [Safari fork by @mathieudutour](https://github.com/mathieudutour/refined-github-safari)
+
+These are implemented as Legacy Safari Extension, and not Safari App Extensions.

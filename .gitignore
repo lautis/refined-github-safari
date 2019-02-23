@@ -60,4 +60,10 @@ typings/
 # next.js build output
 .next
 
-Refined\ Github.safariextension
+build
+
+xcuserdata/
+Refined Github Extension/browser-polyfill.min.js
+Refined Github Extension/content.js
+Refined Github Extension/content.css
+Refined Github Extension/intersection-observer.js
