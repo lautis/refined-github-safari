@@ -54,17 +54,17 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     
     func respondSet(userInfo: [String : Any]?, from page: SFSafariPage) {
-        guard let namespace = userInfo?["namespace"] as? String else { return }
+        guard let message = userInfo else { return }
+        guard let namespace = message["namespace"] as? String else { return }
+        guard let values = message["values"] as? Dictionary<String, Any> else { return }
 
         let oldValue = self.readLocalStorage(namespace: namespace)
-        if let values = userInfo?["values"] as? Dictionary<String, Any> {
-            self.data[namespace] = oldValue.merging(values) { (_, last) in last }
-            
-            // TODO: all pages / windows
-            page.dispatchMessageToScript(withName: "storage-change", userInfo: ["old": self.getValues(data: oldValue, keys: Array(values.keys)), "new": values, namespace: namespace])
-        }
+        self.data[namespace] = oldValue.merging(values) { (_, last) in last }
         
-        if let id = userInfo?["id"] as? String {
+        // TODO: all pages / windows
+        page.dispatchMessageToScript(withName: "storage-change", userInfo: ["old": self.getValues(data: oldValue, keys: Array(values.keys)), "new": values, namespace: namespace])
+        
+        if let id = message["id"] as? String {
             page.dispatchMessageToScript(withName: "set-response", userInfo: [
                 "id": id
                 ])
@@ -73,9 +73,11 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
 
     }
     func respondMessage(userInfo: [String : Any]?, from page: SFSafariPage) {
-        guard userInfo != nil && (userInfo?["action"] as? String) == "openAllInTabs" else { return }
-        guard let pages = userInfo?["urls"] as? [String] else { return }
-        let urls = pages.compactMap { URL(string: $0) }
+        guard let payload = userInfo else { return }
+        guard (payload["action"] as? String) == "openAllInTabs" else { return }
+        guard let payloadUrls = payload["urls"] as? [String] else { return }
+
+        let urls = payloadUrls.compactMap { URL(string: $0) }
 
         SFSafariApplication.getActiveWindow { (activeWindow) in
             urls.forEach({ (url) in activeWindow?.openTab(with: url, makeActiveIfPossible: false) })
