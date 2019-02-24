@@ -26,6 +26,11 @@ npm run build
 
 will build the required JS file to "Refined GitHub Extension" directory.
 
+Open Xcode and make these changes for both the application and extension targets:
+
+- In General > Identity change the bundle identifier to reverse DNS format. Make sure the extension target has the `-extension` suffix.
+- In General > Signing set your team. Xcode should take care of the provisioning profile and certificate automatically.
+
 Then, build Refined GitHub for Safari.app with
 
 ```

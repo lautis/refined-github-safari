@@ -19,7 +19,8 @@ class ViewController: NSViewController {
     }
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
-        SFSafariApplication.showPreferencesForExtension(withIdentifier: "fi.lautanala.refined-github-extension") { error in
+        let bundlePrefix = Bundle(for: ViewController.self).bundleIdentifier ?? ""
+        SFSafariApplication.showPreferencesForExtension(withIdentifier: "\(bundlePrefix)-extension") { error in
             if let _ = error {
                 // Insert code to inform the user that something went wrong.
 
