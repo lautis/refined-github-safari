@@ -17,13 +17,13 @@
 	<key>CFBundlePackageType</key>
 	<string>XPC!</string>
 	<key>CFBundleShortVersionString</key>
-	<string>2.0.1</string>
+	<string>2.0.2</string>
 	<key>CFBundleVersion</key>
-	<string>2</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
+	<string>3</string>
 	<key>LSApplicationCategoryType</key>
 	<string></string>
+	<key>LSMinimumSystemVersion</key>
+	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
@@ -55,13 +55,13 @@
 		</array>
 		<key>SFSafariWebsiteAccess</key>
 		<dict>
-			<key>Include Secure Pages</key>
-			<true/>
 			<key>Allowed Domains</key>
 			<array>
 				<string>github.com</string>
 				<string>gist.github.com</string>
 			</array>
+			<key>Include Secure Pages</key>
+			<true/>
 			<key>Level</key>
 			<string>Some</string>
 		</dict>
