@@ -1,0 +1,2 @@
+#!/bin/sh
+sed -e 's/DEVELOPMENT_TEAM = [[:alnum:]]\{1,\}/DEVELOPMENT_TEAM = ""/g'
