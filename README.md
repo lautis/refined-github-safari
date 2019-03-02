@@ -39,6 +39,19 @@ xcodebuild
 
 The built app will be located in build/Release.
 
+## Git attributes
+
+For working builds while keeping the Git repository clean, there are shell scripts to help with [Git attributes](https://git-scm.com/docs/gitattributes).
+
+Enable this with
+
+```
+git config filter.xcode-project.clean bin/xcode-project-clean DEVELOPMENT_TEAM_ID BUNDLE_IDENTIFIER
+git config filter.xcode-project.smudge bin/xcode-project-smudge
+```
+
+but replace the values with your Xcode Development Team id and bundle identifier.
+
 ## Alternatives
 
 This repository is not the first attempt to create a Safari version of Refined GitHub. There are at least two other similar projects:
