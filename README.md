@@ -47,7 +47,7 @@ Enable this with
 
 ```
 git config filter.xcode-project.clean bin/xcode-project-clean DEVELOPMENT_TEAM_ID BUNDLE_IDENTIFIER
-git config filter.xcode-project.smudge bin/xcode-project-smudge
+git config filter.xcode-project.smudge bin/xcode-project-smudge DEVELOPMENT_TEAM_ID BUNDLE_IDENTIFIER
 ```
 
 but replace the values with your Xcode Development Team id and bundle identifier.

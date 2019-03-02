@@ -1,3 +1,4 @@
 #!/bin/sh
-sed -e "s/DEVELOPMENT_TEAM = \"\";/DEVELOPMENT_TEAM = $1;/g" |
-  sed -e "s/PRODUCT_BUNDLE_IDENTIFIER = \"refined-github-extension\";/PRODUCT_BUNDLE_IDENTIFIER = \"$2\";/g'
+sed -e "s/DEVELOPMENT_TEAM = [[:alnum:]]\{1,\};/DEVELOPMENT_TEAM = \"\";/g" |
+  sed -e "s/PRODUCT_BUNDLE_IDENTIFIER = \"$2\";/PRODUCT_BUNDLE_IDENTIFIER = \"refined-github\";/g" |
+  sed -e "s/PRODUCT_BUNDLE_IDENTIFIER = \"$2-extension\";/PRODUCT_BUNDLE_IDENTIFIER = \"refined-github-extension\";/g"
