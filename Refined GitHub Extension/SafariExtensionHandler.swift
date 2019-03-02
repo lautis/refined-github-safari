@@ -9,7 +9,12 @@
 import SafariServices
 
 class SafariExtensionHandler: SFSafariExtensionHandler {
-    var data = [String: [String: Any]]()
+    var syncData: [String: Any] = [
+        "options": [
+            "disabledFeatures": "show-recently-pushed-branches-on-more-pages split-issue-pr-search-results"
+        ]
+    ];
+    var localData = [String: Any]();
     
     func getValues<K,V>(data: [K: V], keys: [K]?) -> [K: V] {
         if let stringKeys = keys {
@@ -37,19 +42,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         }
     }
     
-    func injectSettings(namespace: String, data: [String: Any]) -> [String: Any] {
-        guard namespace == "sync" else { return data }
-        
-        let options = [
-            "disabledFeatures": "show-recently-pushed-branches-on-more-pages split-issue-pr-search-results"
-        ]
-        
-        return data.merging(["options": options], uniquingKeysWith: { (_, last) in last })
-    }
-    
     func readLocalStorage(namespace: String) -> [String: Any] {
-        let data = self.data[namespace, default: [String: Any]()]
-        return self.injectSettings(namespace: namespace, data: data)
+        if (namespace == "sync") {
+            return self.syncData;
+        } else {
+            return self.localData;
+        }
     }
     
     func respondSet(userInfo: [String : Any]?, from page: SFSafariPage) {
@@ -58,7 +56,13 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
         guard let values = message["values"] as? Dictionary<String, Any> else { return }
 
         let oldValue = self.readLocalStorage(namespace: namespace)
-        self.data[namespace] = oldValue.merging(values) { (_, last) in last }
+        let newValue = oldValue.merging(values) { (_, last) in last }
+        
+        if (namespace == "sync") {
+            self.syncData = newValue
+        } else {
+            self.localData = newValue
+        }
         
         // TODO: all pages / windows
         page.dispatchMessageToScript(withName: "storage-change", userInfo: ["old": self.getValues(data: oldValue, keys: Array(values.keys)), "new": values, namespace: namespace])
@@ -68,8 +72,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
                 "id": id
                 ])
         }
-        
-
     }
     func respondMessage(userInfo: [String : Any]?, from page: SFSafariPage) {
         guard let payload = userInfo else { return }
