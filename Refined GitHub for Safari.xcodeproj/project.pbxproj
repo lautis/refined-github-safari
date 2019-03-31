@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -324,7 +324,7 @@
 				};
 			};
 			buildConfigurationList = 76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined GitHub for Safari" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -585,7 +585,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -608,7 +608,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -631,7 +631,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
@@ -654,7 +654,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
@@ -673,7 +673,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined GitHub.app/Contents/MacOS/Refined GitHub for Safari";
 			};
 			name = Debug;
@@ -693,7 +693,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubTests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined GitHub.app/Contents/MacOS/Refined GitHub for Safari";
 			};
 			name = Release;
@@ -712,7 +712,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Refined GitHub for Safari";
 			};
 			name = Debug;
@@ -731,7 +731,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubUITests";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TEST_TARGET_NAME = "Refined GitHub for Safari";
 			};
 			name = Release;
