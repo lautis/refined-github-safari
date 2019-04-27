@@ -11,7 +11,7 @@ import SafariServices
 class SafariExtensionHandler: SFSafariExtensionHandler {
     var syncData: [String: Any] = [
         "options": [
-            "disabledFeatures": "show-recently-pushed-branches-on-more-pages split-issue-pr-search-results"
+            "disabledFeatures": "recently-pushed-branches-enhancements split-issue-pr-search-results tags-dropdown"
         ]
     ];
     var localData = [String: Any]();
