@@ -4,9 +4,7 @@
   "description": "Safari port of refined-github",
   "main": "index.js",
   "scripts": {
-    "build": "npm run refined-github && npm run copy",
-    "copy:intersection-observer": "cp node_modules/intersection-observer/intersection-observer.js Refined\\ GitHub\\ Extension/",
-    "copy": "npm run copy:intersection-observer",
+    "build": "npm run refined-github",
     "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
     "refined-github:install": "cd refined-github && npm install --no-package-lock",
     "refined-github:build": "cd refined-github && npm run build",
@@ -15,8 +13,6 @@
   },
   "author": "Ville Lautanala <lautis@gmail.com>",
   "license": "ISC",
-  "dependencies": {
-    "intersection-observer": "^0.5.0"
-  },
+  "dependencies": {},
   "devDependencies": {}
 }

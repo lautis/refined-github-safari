@@ -33,10 +33,6 @@
 		<key>SFSafariContentScript</key>
 		<array>
 			<dict>
-				<key>Script</key>
-				<string>intersection-observer.js</string>
-			</dict>
-			<dict>
 				<key>String</key>
 				<string>browser-polyfill.min.js</string>
 			</dict>
