@@ -9,5 +9,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
   addStylesheet("content.css");
   addStylesheet("features.css");
+  addStylesheet("safari.css");
 
 }, false);
