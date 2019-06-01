@@ -66,6 +66,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		762D36F722A2193600D0AEDC /* features.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = features.css.map; sourceTree = "<group>"; };
 		763A0CBC22749E1F00D6898D /* features.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = features.css; sourceTree = "<group>"; };
 		763A0CBE2274A27B00D6898D /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
 		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
@@ -206,6 +207,7 @@
 				76E22A9D221B9A6600C30087 /* browser-polyfill.min.js */,
 				763A0CBE2274A27B00D6898D /* content.css */,
 				763A0CBC22749E1F00D6898D /* features.css */,
+				762D36F722A2193600D0AEDC /* features.css.map */,
 				76E8668F229AA18C00B9041C /* safari.css */,
 				76E22A97221B9A4E00C30087 /* content.js */,
 				76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */,
