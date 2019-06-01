@@ -12,9 +12,12 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     var syncData: [String: Any] = [
         "options": [
             "customCSS": "",
-            "disabledFeatures": "recently-pushed-branches-enhancements split-issue-pr-search-results tags-dropdown",
             "personalToken": "",
-            "logging": false
+            "logging": false,
+            "feature:recently-pushed-branches-enhancements": false,
+            "feature:split-issue-pr-search-results": false,
+            "feature:tags-dropdown": false,
+            
         ]
     ];
     var localData = [String: Any]();
