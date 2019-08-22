@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */ = {isa = PBXBuildFile; fileRef = 761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */; };
 		763A0CBF2274A27B00D6898D /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 763A0CBE2274A27B00D6898D /* content.css */; };
-		763A0CC02274A51300D6898D /* features.css in Resources */ = {isa = PBXBuildFile; fileRef = 763A0CBC22749E1F00D6898D /* features.css */; };
 		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
 		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
 		76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A4B221A414C00C30087 /* AppDelegate.swift */; };
@@ -68,8 +67,6 @@
 
 /* Begin PBXFileReference section */
 		761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "resolve-conflicts.js"; sourceTree = "<group>"; };
-		762D36F722A2193600D0AEDC /* features.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = features.css.map; sourceTree = "<group>"; };
-		763A0CBC22749E1F00D6898D /* features.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = features.css; sourceTree = "<group>"; };
 		763A0CBE2274A27B00D6898D /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
 		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
 		76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined GitHub for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -208,8 +205,6 @@
 				76E22A9B221B9A5E00C30087 /* styles.js */,
 				76E22A9D221B9A6600C30087 /* browser-polyfill.min.js */,
 				763A0CBE2274A27B00D6898D /* content.css */,
-				763A0CBC22749E1F00D6898D /* features.css */,
-				762D36F722A2193600D0AEDC /* features.css.map */,
 				76E8668F229AA18C00B9041C /* safari.css */,
 				761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */,
 				76E22A97221B9A4E00C30087 /* content.js */,
@@ -388,7 +383,6 @@
 				76E22AA0221B9AC800C30087 /* chrome.js in Resources */,
 				76E22A98221B9A4E00C30087 /* content.js in Resources */,
 				763A0CBF2274A27B00D6898D /* content.css in Resources */,
-				763A0CC02274A51300D6898D /* features.css in Resources */,
 				76E22A9E221B9A6600C30087 /* browser-polyfill.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
