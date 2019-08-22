@@ -99,13 +99,21 @@ const storage = namespace => {
 
 browser = chrome = {
   runtime: {
+    getManifest() {
+      return {
+        name: "Refined Github for Safari"
+      }
+    },
+    getURL(file) {
+      return safari.extension.baseURI + name;
+    },
     onMessage: {
       addListener: () => null
     },
     sendMessage(message) {
       safari.extension.dispatchMessage("message", message);
     },
-    lastError: () => null
+    lastError: null
   },
   storage: {
     onChanged: {
