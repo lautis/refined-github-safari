@@ -40,6 +40,11 @@ safari.self.addEventListener("message", respondToMessage);
 
 const storage = namespace => {
   return {
+    clear(callback) {
+      safari.extension.dispatchMessage("clear", { namespace });
+      if (callback) callback();
+      return Promise.resolve();
+    },
     get(keys, callback) {
       const transformResponse = (response) => {
         if (Array.isArray(keys)) {
@@ -79,7 +84,11 @@ const storage = namespace => {
         safari.extension.dispatchMessage("get", { id, keys: normalizeKeys(keys), namespace });
       });
     },
-
+    remove(values, callback) {
+      safari.extension.dispatchMessage("remove", { values, namespace });
+      if (callback) callback();
+      return Promise.resolve();
+    },
     set(values, callback) {
       safari.extension.dispatchMessage("set", { values, namespace });
       if (callback) callback();
