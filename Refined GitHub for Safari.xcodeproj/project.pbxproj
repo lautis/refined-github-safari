@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */ = {isa = PBXBuildFile; fileRef = 761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */; };
 		763A0CBF2274A27B00D6898D /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 763A0CBE2274A27B00D6898D /* content.css */; };
 		763A0CC02274A51300D6898D /* features.css in Resources */ = {isa = PBXBuildFile; fileRef = 763A0CBC22749E1F00D6898D /* features.css */; };
 		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
@@ -66,6 +67,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "resolve-conflicts.js"; sourceTree = "<group>"; };
 		762D36F722A2193600D0AEDC /* features.css.map */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = "sourcecode.module-map"; path = features.css.map; sourceTree = "<group>"; };
 		763A0CBC22749E1F00D6898D /* features.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = features.css; sourceTree = "<group>"; };
 		763A0CBE2274A27B00D6898D /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; };
@@ -209,6 +211,7 @@
 				763A0CBC22749E1F00D6898D /* features.css */,
 				762D36F722A2193600D0AEDC /* features.css.map */,
 				76E8668F229AA18C00B9041C /* safari.css */,
+				761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */,
 				76E22A97221B9A4E00C30087 /* content.js */,
 				76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */,
 				76E22A7E221A414E00C30087 /* Info.plist */,
@@ -380,6 +383,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				76E22A9C221B9A5E00C30087 /* styles.js in Resources */,
+				761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */,
 				76E86690229AA18C00B9041C /* safari.css in Resources */,
 				76E22AA0221B9AC800C30087 /* chrome.js in Resources */,
 				76E22A98221B9A4E00C30087 /* content.js in Resources */,
