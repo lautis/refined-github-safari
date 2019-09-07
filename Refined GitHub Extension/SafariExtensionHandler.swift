@@ -14,7 +14,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             "customCSS": "",
             "personalToken": "",
             "logging": false,
-            "feature:default-to-rich-diff": false,
             "feature:recently-pushed-branches-enhancements": false,
             "feature:mark-unread": false,
             "feature:more-dropdown": false,
