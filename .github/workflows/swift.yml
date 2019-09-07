@@ -11,12 +11,12 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: "12.x"
-      - run: |
-          npm install
-          npm run build
+      - run: npm install
+      - run: npm run build
       - run: bundle install
       - run: |
           fastlane run setup_ci force:true
+          fastlane run cert platform:macos
           fastlane release
         env:
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
