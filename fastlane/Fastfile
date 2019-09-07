@@ -51,6 +51,13 @@ platform :mac do
     notarize(package: app_path)
   end
 
+  lane :set_team do
+    update_project_team(
+      path: "Refined GitHub for Safari.xcodeproj",
+      teamid: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+    )
+  end
+
   lane :release do
     archive
     export_archive

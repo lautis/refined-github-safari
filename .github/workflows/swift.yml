@@ -26,6 +26,7 @@ jobs:
           security find-identity -v -p codesigning
       - run: |
           bundle exec fastlane run setup_ci force:true
+          bundle exec fastlane set_team
           bundle exec fastlane release
         env:
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
