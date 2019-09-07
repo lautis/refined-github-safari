@@ -15,7 +15,9 @@ jobs:
           npm install
           npm run build
       - run: bundle install
-      - run: fastlane release
+      - run: |
+          fastlane run setup_ci force:true
+          fastlane release
         env:
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
           FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
