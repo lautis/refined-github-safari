@@ -62,6 +62,11 @@ typings/
 
 build
 
+fastlane/README.md
+fastlane/report.xml
+
+.bundle
+
 xcuserdata/
 Refined GitHub Extension/browser-polyfill.min.js
 Refined GitHub Extension/content.js

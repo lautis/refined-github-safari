@@ -1,0 +1,59 @@
+# This file contains the fastlane.tools configuration
+# You can find the documentation at https://docs.fastlane.tools
+#
+# For a list of all available actions, check out
+#
+#     https://docs.fastlane.tools/actions
+#
+# For a list of all available plugins, check out
+#
+#     https://docs.fastlane.tools/plugins/available-plugins
+#
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:mac)
+
+APP_NAME = 'Refined GitHub for Safari'
+BUILD_DIR = 'build'
+
+def archive_path
+  "#{BUILD_DIR}/#{APP_NAME}.xcarchive"
+end
+
+def app_path
+  "#{BUILD_DIR}/#{APP_NAME}.app"
+end
+
+platform :mac do
+  lane :export_archive do
+    xcarchive(
+      export_archive: true,
+      archive_path: archive_path,
+      export_path: BUILD_DIR,
+      export_options_plist: {
+        destination: "export",
+        method: "developer-id",
+        signing_style: "automatic",
+        team_id: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+      }
+    )
+  end
+
+  lane :archive do
+    FileUtils.mkdir_p File.expand_path("../#{BUILD_DIR}", __dir__)
+    xcbuild(archive: true, archive_path: archive_path, scheme: "Refined GitHub for Safari")
+  end
+
+  lane :notarize_app do
+    app_path = File.expand_path("../#{BUILD_DIR}/Refined GitHub for Safari.app", __dir__)
+    notarize(package: app_path)
+  end
+
+  lane :release do
+    archive
+    export_archive
+    notarize_app
+  end
+end
