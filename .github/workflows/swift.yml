@@ -27,6 +27,10 @@ jobs:
       - run: |
           bundle exec fastlane run setup_ci force:true
           bundle exec fastlane set_team
+        env:
+          FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
+          FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
+      - run: |
           bundle exec fastlane release
         env:
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
