@@ -8,6 +8,15 @@ This is a Safari version of [Refined GitHub](https://github.com/sindresorhus/ref
 
 [Download latest release](https://github.com/lautis/refined-github-safari/releases)
 
+Or using homebrew:
+
+```sh
+brew tap lautis/refined-github-safari
+brew cask install refined-github-safari
+```
+
+After this, start the app, and enable Refined Github for Safari in Safari Extensions Preferences.
+
 ## Development
 
 Before starting, git submodules should be checked out (`git submodule update --init`) and [Node](https://nodejs.org/en/) should be installed.
