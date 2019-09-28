@@ -1,3 +1,7 @@
 .subnav-search-context summary {
   display: block;
 }
+
+.rgh-parse-backticks {
+  display: inline-block;
+}
