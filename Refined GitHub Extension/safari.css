@@ -1,5 +1,7 @@
-.subnav-search-context summary {
-  display: block;
+.subnav-search-context .dropdown-caret {
+  position: relative;
+  top: -0.8em;
+  margin-bottom: -4px;
 }
 
 .rgh-parse-backticks {
