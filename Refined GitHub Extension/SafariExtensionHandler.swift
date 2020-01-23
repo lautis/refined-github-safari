@@ -17,6 +17,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
             "feature:recently-pushed-branches-enhancements": false,
             "feature:mark-unread": false,
             "feature:more-dropdown": false,
+            "feature:releases-tab": false,
             "feature:split-issue-pr-search-results": false,
             "feature:tags-dropdown": false,
 
