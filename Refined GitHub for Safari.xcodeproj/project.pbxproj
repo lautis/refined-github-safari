@@ -8,8 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */ = {isa = PBXBuildFile; fileRef = 761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */; };
-		763A0CBF2274A27B00D6898D /* content.css in Resources */ = {isa = PBXBuildFile; fileRef = 763A0CBE2274A27B00D6898D /* content.css */; };
 		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
+		768DF43C2440776700037CEF /* refined-github.js in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43B2440776700037CEF /* refined-github.js */; };
+		768DF43E244077CC00037CEF /* refined-github.css in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43D244077CC00037CEF /* refined-github.css */; };
 		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
 		76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A4B221A414C00C30087 /* AppDelegate.swift */; };
 		76E22A4F221A414C00C30087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A4D221A414C00C30087 /* Main.storyboard */; };
@@ -20,9 +21,7 @@
 		76E22A70221A414E00C30087 /* Refined GitHub for Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		76E22A75221A414E00C30087 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E22A74221A414E00C30087 /* Cocoa.framework */; };
 		76E22A78221A414E00C30087 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */; };
-		76E22A98221B9A4E00C30087 /* content.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A97221B9A4E00C30087 /* content.js */; };
 		76E22A9C221B9A5E00C30087 /* styles.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A9B221B9A5E00C30087 /* styles.js */; };
-		76E22A9E221B9A6600C30087 /* browser-polyfill.min.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A9D221B9A6600C30087 /* browser-polyfill.min.js */; };
 		76E22AA0221B9AC800C30087 /* chrome.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A9F221B9AC800C30087 /* chrome.js */; };
 		76E86690229AA18C00B9041C /* safari.css in Resources */ = {isa = PBXBuildFile; fileRef = 76E8668F229AA18C00B9041C /* safari.css */; };
 /* End PBXBuildFile section */
@@ -67,8 +66,9 @@
 
 /* Begin PBXFileReference section */
 		761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "resolve-conflicts.js"; sourceTree = "<group>"; };
-		763A0CBE2274A27B00D6898D /* content.css */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.css; path = content.css; sourceTree = "<group>"; tabWidth = 2; };
 		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		768DF43B2440776700037CEF /* refined-github.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "refined-github.js"; sourceTree = "<group>"; };
+		768DF43D244077CC00037CEF /* refined-github.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "refined-github.css"; sourceTree = "<group>"; };
 		76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined GitHub for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub.entitlements; sourceTree = "<group>"; };
 		76E22A4B221A414C00C30087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -87,9 +87,7 @@
 		76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
 		76E22A7E221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		76E22A83221A414E00C30087 /* Refined_GitHub_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub_Extension.entitlements; sourceTree = "<group>"; };
-		76E22A97221B9A4E00C30087 /* content.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = content.js; sourceTree = "<group>"; };
 		76E22A9B221B9A5E00C30087 /* styles.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = styles.js; sourceTree = "<group>"; };
-		76E22A9D221B9A6600C30087 /* browser-polyfill.min.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "browser-polyfill.min.js"; sourceTree = "<group>"; };
 		76E22A9F221B9AC800C30087 /* chrome.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chrome.js; sourceTree = "<group>"; };
 		76E8668F229AA18C00B9041C /* safari.css */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.css; path = safari.css; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
 /* End PBXFileReference section */
@@ -201,13 +199,12 @@
 		76E22A76221A414E00C30087 /* Refined GitHub Extension */ = {
 			isa = PBXGroup;
 			children = (
+				768DF43D244077CC00037CEF /* refined-github.css */,
 				76E22A9F221B9AC800C30087 /* chrome.js */,
 				76E22A9B221B9A5E00C30087 /* styles.js */,
-				76E22A9D221B9A6600C30087 /* browser-polyfill.min.js */,
-				763A0CBE2274A27B00D6898D /* content.css */,
 				76E8668F229AA18C00B9041C /* safari.css */,
 				761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */,
-				76E22A97221B9A4E00C30087 /* content.js */,
+				768DF43B2440776700037CEF /* refined-github.js */,
 				76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */,
 				76E22A7E221A414E00C30087 /* Info.plist */,
 				76E22A83221A414E00C30087 /* Refined_GitHub_Extension.entitlements */,
@@ -380,10 +377,9 @@
 				76E22A9C221B9A5E00C30087 /* styles.js in Resources */,
 				761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */,
 				76E86690229AA18C00B9041C /* safari.css in Resources */,
+				768DF43C2440776700037CEF /* refined-github.js in Resources */,
+				768DF43E244077CC00037CEF /* refined-github.css in Resources */,
 				76E22AA0221B9AC800C30087 /* chrome.js in Resources */,
-				76E22A98221B9A4E00C30087 /* content.js in Resources */,
-				763A0CBF2274A27B00D6898D /* content.css in Resources */,
-				76E22A9E221B9A6600C30087 /* browser-polyfill.min.js in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

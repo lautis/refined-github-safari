@@ -7,8 +7,7 @@ document.addEventListener('DOMContentLoaded', function() {
     document.head.appendChild(link);
   }
 
-  addStylesheet("content.css");
-  addStylesheet("features.css");
+  addStylesheet("refined-github.css");
   addStylesheet("safari.css");
 
 }, false);

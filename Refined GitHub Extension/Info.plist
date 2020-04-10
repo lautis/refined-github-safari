@@ -33,16 +33,12 @@
 		<key>SFSafariContentScript</key>
 		<array>
 			<dict>
-				<key>String</key>
-				<string>browser-polyfill.min.js</string>
-			</dict>
-			<dict>
 				<key>Script</key>
 				<string>chrome.js</string>
 			</dict>
 			<dict>
 				<key>Script</key>
-				<string>content.js</string>
+				<string>refined-github.js</string>
 			</dict>
 			<dict>
 				<key>Script</key>
