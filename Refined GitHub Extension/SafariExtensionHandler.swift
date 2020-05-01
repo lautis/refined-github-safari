@@ -131,8 +131,7 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
     func respondMessage(userInfo: [String : Any]?, from page: SFSafariPage) {
         guard let payload = userInfo else { return }
-        guard (payload["action"] as? String) == "openAllInTabs" else { return }
-        guard let payloadUrls = payload["urls"] as? [String] else { return }
+        guard let payloadUrls = payload["openUrls"] as? [String] else { return }
 
         let urls = payloadUrls.compactMap { URL(string: $0) }
 
