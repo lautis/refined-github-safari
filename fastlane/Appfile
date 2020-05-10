@@ -1,0 +1,4 @@
+# frozen_string_literal: true
+
+app_identifier 'fi.lautanala.refined-github'
+team_id 'KETPJB4C67'

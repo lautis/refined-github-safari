@@ -1,0 +1,14 @@
+# frozen_string_literal: true
+
+# Uncomment the line if you want fastlane to automatically update itself
+# update_fastlane
+
+default_platform(:mac)
+
+platform :mac do
+  desc 'Build aapp'
+  lane :build do
+    update_code_signing_settings(code_sign_identity: '-')
+    xcodebuild(archive: true, scheme: 'Refined GitHub for Safari')
+  end
+end
