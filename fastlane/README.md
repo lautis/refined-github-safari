@@ -20,7 +20,52 @@ or alternatively using `brew cask install fastlane`
 ```
 fastlane mac build
 ```
-Build aapp
+Build app
+### mac export_archive
+```
+fastlane mac export_archive
+```
+
+### mac archive
+```
+fastlane mac archive
+```
+
+### mac notarize_app
+```
+fastlane mac notarize_app
+```
+
+### mac zip_app
+```
+fastlane mac zip_app
+```
+
+### mac set_team
+```
+fastlane mac set_team
+```
+
+### mac build_release
+```
+fastlane mac build_release
+```
+
+### mac bump_version
+```
+fastlane mac bump_version
+```
+
+### mac release
+```
+fastlane mac release
+```
+
+### mac update_refined_github
+```
+fastlane mac update_refined_github
+```
+
 
 ----
 

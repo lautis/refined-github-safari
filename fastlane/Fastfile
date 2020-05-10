@@ -5,10 +5,113 @@
 
 default_platform(:mac)
 
+def build_js
+  sh 'npm run build'
+end
+
+APP_NAME = 'Refined GitHub for Safari'
+BUILD_DIR = 'build'
+
+def archive_path
+  "#{BUILD_DIR}/#{APP_NAME}.xcarchive"
+end
+
+def app_path
+  File.expand_path("../#{BUILD_DIR}/Refined GitHub for Safari.app", __dir__)
+end
+
+def marketing_version_number
+  get_version_number(target: APP_NAME)
+end
+
 platform :mac do
-  desc 'Build aapp'
+  desc 'Build app'
   lane :build do
+    build_js
     update_code_signing_settings(code_sign_identity: '-')
     xcodebuild(archive: true, scheme: 'Refined GitHub for Safari')
+  end
+
+  lane :export_archive do
+    xcarchive(
+      export_archive: true,
+      archive_path: archive_path,
+      export_path: BUILD_DIR,
+      export_options_plist: {
+        destination: 'export',
+        method: 'developer-id',
+        signing_style: 'automatic',
+        team_id: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+      }
+    )
+  end
+
+  lane :archive do
+    FileUtils.mkdir_p File.expand_path("../#{BUILD_DIR}", __dir__)
+    xcbuild(archive: true, archive_path: archive_path, scheme: 'Refined GitHub for Safari')
+  end
+
+  lane :notarize_app do
+    notarize(
+      package: app_path,
+      username: CredentialsManager::AppfileConfig.try_fetch_value(:apple_id),
+      print_log: true
+    )
+  end
+
+  lane :zip_app do
+    zip(
+      path: app_path,
+      output_path: File.join(BUILD_DIR, 'Refined-Github.zip'),
+      verbose: false,
+      symlinks: true
+    )
+  end
+
+  lane :set_team do
+    update_project_team(
+      path: 'Refined GitHub for Safari.xcodeproj',
+      teamid: CredentialsManager::AppfileConfig.try_fetch_value(:team_id)
+    )
+  end
+
+  lane :build_release do
+    build_js
+    archive
+    export_archive
+    notarize_app
+    zip_app
+  end
+
+  lane :bump_version do
+    increment_build_number_in_xcodeproj
+    [APP_NAME, "#{APP_NAME} Extension"].each do |target|
+      increment_version_number_in_xcodeproj(
+        bump_type: 'patch',
+        target: target
+      )
+    end
+    commit_version_bump(message: "Version #{marketing_version_number}")
+  end
+
+  lane :release do
+    bump_version
+    build_release
+    push_to_git_remote
+
+    set_github_release(
+      repository_name: 'lautis/refined-github-safari',
+      api_token: ENV['GITHUB_TOKEN'],
+      name: "v#{marketing_version_number}",
+      tag_name: "v#{marketing_version_number}",
+      description: "Version #{marketing_version_number}",
+      commitish: last_git_commit,
+      upload_assets: ['build/Refined-GitHub-for-Safari.zip']
+    )
+  end
+
+  lane :update_refined_github do
+    git_submodule_update
+    git_commit(path: 'refined-github', message: 'Update refined-github')
   end
 end
