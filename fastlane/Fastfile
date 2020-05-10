@@ -20,6 +20,10 @@ def app_path
   File.expand_path("../#{BUILD_DIR}/Refined GitHub for Safari.app", __dir__)
 end
 
+def refined_github_path
+  File.expand_path('../refined-github', __dir__)
+end
+
 def marketing_version_number
   get_version_number(target: APP_NAME)
 end
@@ -112,6 +116,8 @@ platform :mac do
 
   lane :update_refined_github do
     git_submodule_update
+    sh('git', '-C', refined_github_path, 'checkout', 'master')
+    sh('git', '-C', refined_github_path, 'pull')
     git_commit(path: 'refined-github', message: 'Update refined-github')
   end
 end
