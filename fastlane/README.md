@@ -56,6 +56,11 @@ fastlane mac build_release
 fastlane mac bump_version
 ```
 
+### mac github_release
+```
+fastlane mac github_release
+```
+
 ### mac release
 ```
 fastlane mac release

@@ -24,6 +24,10 @@ def refined_github_path
   File.expand_path('../refined-github', __dir__)
 end
 
+def zip_path
+  File.join(BUILD_DIR, 'Refined-GitHub-for-Safari.zip')
+end
+
 def marketing_version_number
   get_version_number(target: APP_NAME)
 end
@@ -66,7 +70,7 @@ platform :mac do
   lane :zip_app do
     zip(
       path: app_path,
-      output_path: File.join(BUILD_DIR, 'Refined-Github.zip'),
+      output_path: zip_path,
       verbose: false,
       symlinks: true
     )
@@ -98,20 +102,23 @@ platform :mac do
     commit_version_bump(message: "Version #{marketing_version_number}")
   end
 
-  lane :release do
-    bump_version
-    build_release
-    push_to_git_remote
-
+  lane :github_release do
     set_github_release(
       repository_name: 'lautis/refined-github-safari',
       api_token: ENV['GITHUB_TOKEN'],
       name: "v#{marketing_version_number}",
       tag_name: "v#{marketing_version_number}",
       description: "Version #{marketing_version_number}",
-      commitish: last_git_commit,
-      upload_assets: ['build/Refined-GitHub-for-Safari.zip']
+      commitish: last_git_commit[:commit_hash],
+      upload_assets: [zip_path]
     )
+  end
+
+  lane :release do
+    bump_version
+    build_release
+    push_to_git_remote
+    github_release
   end
 
   lane :update_refined_github do
