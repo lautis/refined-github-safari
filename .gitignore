@@ -69,3 +69,6 @@ Refined GitHub Extension/intersection-observer.js
 Refined GitHub Extension/resolve-conflicts.js
 
 fastlane/report.xml
+
+# Bundler configuration
+.bundle
