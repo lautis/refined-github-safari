@@ -123,8 +123,10 @@ platform :mac do
 
   lane :update_refined_github do
     git_submodule_update
-    sh('git', '-C', refined_github_path, 'checkout', 'master')
-    sh('git', '-C', refined_github_path, 'pull')
-    git_commit(path: 'refined-github', message: 'Update refined-github')
+    sh('git', '-C', refined_github_path, 'fetch', '--tags')
+    commitish = sh('git', '-C', refined_github_path, 'rev-list', '--tags', '--max-count=1').chomp
+    latest_tag = sh('git', '-C', refined_github_path, 'describe', '--tags', commitish).chomp
+    sh('git', '-C', refined_github_path, 'checkout', latest_tag)
+    git_commit(path: 'refined-github', message: "Update refined-github to #{latest_tag}")
   end
 end
