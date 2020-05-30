@@ -9,8 +9,7 @@
     "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
     "refined-github:install": "cd refined-github && npm ci",
     "refined-github:build": "cd refined-github && npm run build",
-    "refined-github:copy": "cp refined-github/distribution/{refined-github.css,refined-github.js,resolve-conflicts.js} Refined\\ GitHub\\ Extension/",
-    "refined-github:update": "cd refined-github && git fetch && git checkout origin/master"
+    "refined-github:copy": "cp refined-github/distribution/{refined-github.css,refined-github.js,resolve-conflicts.js} Refined\\ GitHub\\ Extension/"
   },
   "author": "Ville Lautanala <lautis@gmail.com>",
   "license": "ISC",
