@@ -9,6 +9,10 @@
 /* Begin PBXBuildFile section */
 		761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */ = {isa = PBXBuildFile; fileRef = 761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */; };
 		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
+		768006A22482C8EB002B7FC1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A12482C8EB002B7FC1 /* KeychainAccess */; };
+		768006A42482C909002B7FC1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768006A32482C909002B7FC1 /* Settings.swift */; };
+		768006A52482C909002B7FC1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768006A32482C909002B7FC1 /* Settings.swift */; };
+		768006A72482CABB002B7FC1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A62482CABB002B7FC1 /* KeychainAccess */; };
 		768DF43C2440776700037CEF /* refined-github.js in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43B2440776700037CEF /* refined-github.js */; };
 		768DF43E244077CC00037CEF /* refined-github.css in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43D244077CC00037CEF /* refined-github.css */; };
 		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
@@ -67,6 +71,7 @@
 /* Begin PBXFileReference section */
 		761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "resolve-conflicts.js"; sourceTree = "<group>"; };
 		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
+		768006A32482C909002B7FC1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
 		768DF43B2440776700037CEF /* refined-github.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = "refined-github.js"; sourceTree = "<group>"; };
 		768DF43D244077CC00037CEF /* refined-github.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = "refined-github.css"; sourceTree = "<group>"; };
 		76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined GitHub for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -97,6 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768006A22482C8EB002B7FC1 /* KeychainAccess in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -118,6 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768006A72482CABB002B7FC1 /* KeychainAccess in Frameworks */,
 				76E22A75221A414E00C30087 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +173,7 @@
 				76E22A50221A414C00C30087 /* ViewController.swift */,
 				76E22A52221A414E00C30087 /* Assets.xcassets */,
 				76E22A54221A414E00C30087 /* Info.plist */,
+				768006A32482C909002B7FC1 /* Settings.swift */,
 			);
 			path = "Refined GitHub";
 			sourceTree = "<group>";
@@ -230,6 +238,9 @@
 				76E22A72221A414E00C30087 /* PBXTargetDependency */,
 			);
 			name = "Refined GitHub for Safari";
+			packageProductDependencies = (
+				768006A12482C8EB002B7FC1 /* KeychainAccess */,
+			);
 			productName = "Refined GitHub for Safari";
 			productReference = 76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */;
 			productType = "com.apple.product-type.application";
@@ -283,6 +294,9 @@
 			dependencies = (
 			);
 			name = "Refined GitHub for Safari Extension";
+			packageProductDependencies = (
+				768006A62482CABB002B7FC1 /* KeychainAccess */,
+			);
 			productName = "Refined GitHub for Safari Extension";
 			productReference = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -332,6 +346,9 @@
 				Base,
 			);
 			mainGroup = 76E22A3D221A414B00C30087;
+			packageReferences = (
+				768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+			);
 			productRefGroup = 76E22A47221A414C00C30087 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -390,6 +407,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768006A42482C909002B7FC1 /* Settings.swift in Sources */,
 				76E22A51221A414C00C30087 /* ViewController.swift in Sources */,
 				76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */,
 			);
@@ -415,6 +433,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				768006A52482C909002B7FC1 /* Settings.swift in Sources */,
 				76E22A78221A414E00C30087 /* SafariExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -797,6 +816,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		768006A12482C8EB002B7FC1 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+		768006A62482CABB002B7FC1 /* KeychainAccess */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			productName = KeychainAccess;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 76E22A3E221A414B00C30087 /* Project object */;
 }

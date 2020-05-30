@@ -12,8 +12,8 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     var syncData: [String: Any] = [
         "options": [
             "customCSS": "",
-            "personalToken": "",
-            "logging": false,
+            "personalToken": Settings.shared.personalToken,
+            "logging": true,
             "feature:recently-pushed-branches-enhancements": false,
             "feature:mark-unread": false,
             "feature:more-dropdown": false,
@@ -141,7 +141,6 @@ class SafariExtensionHandler: SFSafariExtensionHandler {
     }
 
     override func messageReceived(withName messageName: String, from page: SFSafariPage, userInfo: [String : Any]?) {
-        NSLog("Received message \"\(messageName)\" with userInfo (\(userInfo ?? [:]))")
 
         switch (messageName) {
         case "clear":

@@ -12,10 +12,12 @@ import SafariServices.SFSafariApplication
 class ViewController: NSViewController {
 
     @IBOutlet var appNameLabel: NSTextField!
+    @IBOutlet var personalTokenInput: NSSecureTextField!;
     
     override func viewDidLoad() {
         super.viewDidLoad()
         self.appNameLabel.stringValue = "Refined GitHub for Safari";
+        self.personalTokenInput.stringValue = Settings.shared.personalToken;
     }
     
     @IBAction func openSafariExtensionPreferences(_ sender: AnyObject?) {
@@ -27,5 +29,8 @@ class ViewController: NSViewController {
             }
         }
     }
-
+    
+    @IBAction func personalTokenDidChange(_ notification: AnyObject?) {
+        Settings.shared.personalToken = self.personalTokenInput.stringValue;
+    }
 }
