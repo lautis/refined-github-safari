@@ -7,7 +7,7 @@
     "build": "npm run refined-github",
     "postinstall": "npm run refined-github:install",
     "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
-    "refined-github:install": "cd refined-github && npm ci",
+    "refined-github:install": "cd refined-github && npm install --frozen-lockfile",
     "refined-github:build": "cd refined-github && npm run build",
     "refined-github:copy": "cp refined-github/distribution/{refined-github.css,refined-github.js,resolve-conflicts.js} Refined\\ GitHub\\ Extension/"
   },
