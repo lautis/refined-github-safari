@@ -24,12 +24,20 @@ def refined_github_path
   File.expand_path('../refined-github', __dir__)
 end
 
+def project_path
+  File.expand_path('../', __dir__)
+end
+
 def zip_path
   File.join(BUILD_DIR, 'Refined-GitHub-for-Safari.zip')
 end
 
 def marketing_version_number
   get_version_number(target: APP_NAME)
+end
+
+def silent_sh(*args)
+  `#{Shellwords.join(args)}`
 end
 
 platform :mac do
@@ -124,9 +132,14 @@ platform :mac do
   lane :update_refined_github do
     git_submodule_update
     sh('git', '-C', refined_github_path, 'fetch', '--tags')
-    commitish = sh('git', '-C', refined_github_path, 'rev-list', '--tags', '--max-count=1').chomp
-    latest_tag = sh('git', '-C', refined_github_path, 'describe', '--tags', commitish).chomp
-    sh('git', '-C', refined_github_path, 'checkout', latest_tag)
-    git_commit(path: 'refined-github', message: "Update refined-github to #{latest_tag}")
+    commitish = silent_sh('git', '-C', refined_github_path, 'rev-list', '--tags', '--max-count=1').chomp
+    latest_tag = silent_sh('git', '-C', refined_github_path, 'describe', '--tags', commitish).chomp
+    silent_sh('git', '-C', refined_github_path, 'checkout', latest_tag)
+    if silent_sh('git', '-C', project_path, 'diff', 'refined-github').empty?
+      UI.error('refined-github already up-to-date')
+    else
+      UI.success("Updated refined-github to #{latest_tag}")
+      git_commit(path: 'refined-github', message: "Update refined-github to #{latest_tag}")
+    end
   end
 end
