@@ -6,10 +6,12 @@
   "scripts": {
     "build": "npm run refined-github",
     "postinstall": "npm run refined-github:install",
-    "refined-github": "npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy",
+    "refined-github": "npm run refined-github:patch && npm run refined-github:install && npm run refined-github:build && npm run refined-github:copy && npm run refined-github:restore",
+    "refined-github:patch": "cd refined-github && git am ../patches/*",
     "refined-github:install": "cd refined-github && npm install --frozen-lockfile",
     "refined-github:build": "cd refined-github && npm run build",
-    "refined-github:copy": "cp refined-github/distribution/{refined-github.css,refined-github.js,resolve-conflicts.js} Refined\\ GitHub\\ Extension/"
+    "refined-github:copy": "cp refined-github/distribution/{refined-github.css,refined-github.js,resolve-conflicts.js} Refined\\ GitHub\\ Extension/",
+    "refined-github:restore": "git submodule update"
   },
   "author": "Ville Lautanala <lautis@gmail.com>",
   "license": "ISC",
