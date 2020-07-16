@@ -11,7 +11,6 @@ This is a Safari version of [Refined GitHub](https://github.com/sindresorhus/ref
 Or using homebrew:
 
 ```sh
-brew tap lautis/refined-github-safari
 brew cask install refined-github-safari
 ```
 
