@@ -103,7 +103,7 @@ platform :mac do
     increment_build_number_in_xcodeproj
     [APP_NAME, "#{APP_NAME} Extension"].each do |target|
       increment_version_number_in_xcodeproj(
-        bump_type: 'patch',
+        bump_type: ENV.fetch('BUMP_TYPE', 'patch'),
         target: target
       )
     end
