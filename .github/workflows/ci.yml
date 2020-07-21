@@ -16,11 +16,3 @@ jobs:
           node-version: 12.x
       - run: npm ci
       - run: npm run build --if-present
-      - name: Set up Ruby
-        uses: ruby/setup-ruby@v1
-        with:
-          ruby-version: 2.7
-      - name: Install dependencies
-        run: bundle install
-      - name: Fastlane build
-        run: bundle exec fastlane build
