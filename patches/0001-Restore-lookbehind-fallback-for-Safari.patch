@@ -1,4 +1,4 @@
-From 4dae2e9b294c54bfbaaccdbb9443b0270c510459 Mon Sep 17 00:00:00 2001
+From 6246449593a3eaaa83af7dca5e424c9cf621cbd5 Mon Sep 17 00:00:00 2001
 From: Ville Lautanala <lautis@gmail.com>
 Date: Thu, 16 Jul 2020 16:31:43 +0300
 Subject: [PATCH] Restore lookbehind fallback for Safari
@@ -9,7 +9,7 @@ Subject: [PATCH] Restore lookbehind fallback for Safari
  2 files changed, 8 insertions(+), 8 deletions(-)
 
 diff --git a/package-lock.json b/package-lock.json
-index 1e3e7395..c7b59e36 100644
+index c653b92e..17e854b3 100644
 --- a/package-lock.json
 +++ b/package-lock.json
 @@ -8242,18 +8242,18 @@
@@ -38,13 +38,13 @@ index 1e3e7395..c7b59e36 100644
  				"create-html-element": "^2.1.0"
  			}
 diff --git a/package.json b/package.json
-index 0cd9d066..5f9a23a6 100644
+index 342996d6..882c5ebc 100644
 --- a/package.json
 +++ b/package.json
 @@ -52,8 +52,8 @@
- 		"github-url-detection": "^2.0.3",
+ 		"github-url-detection": "^2.0.4",
  		"image-promise": "^7.0.1",
- 		"indent-textarea": "^2.0.1",
+ 		"indent-textarea": "^2.0.2",
 -		"linkify-issues": "^2.0.0",
 -		"linkify-urls": "^3.1.0",
 +		"linkify-issues": "2.0.0-nolookbehind",
