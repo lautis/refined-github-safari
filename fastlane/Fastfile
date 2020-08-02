@@ -138,6 +138,7 @@ platform :mac do
     if silent_sh('git', '-C', project_path, 'diff', 'refined-github').empty?
       UI.error('refined-github already up-to-date')
     else
+      build_js
       UI.success("Updated refined-github to #{latest_tag}")
       git_commit(path: 'refined-github', message: "Update refined-github to #{latest_tag}")
     end
