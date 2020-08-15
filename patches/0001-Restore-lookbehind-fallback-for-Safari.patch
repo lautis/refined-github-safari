@@ -50,8 +50,7 @@ index 264d36cf..36d33d47 100644
 +		"linkify-issues": "2.0.0-nolookbehind",
 +		"linkify-urls": "3.1.0-nolookbehind",
  		"mem": "6.0.1",
- 		"onetime": "^5.1.0",
+ 		"onetime": "^5.1.2",
  		"select-dom": "^6.0.2",
 -- 
 2.28.0
-
