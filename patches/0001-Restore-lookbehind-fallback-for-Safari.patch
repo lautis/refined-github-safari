@@ -42,7 +42,7 @@ index 264d36cf..36d33d47 100644
 --- a/package.json
 +++ b/package.json
 @@ -52,8 +52,8 @@
- 		"github-url-detection": "^2.0.5",
+ 		"github-url-detection": "^2.0.6",
  		"image-promise": "^7.0.1",
  		"indent-textarea": "^2.0.2",
 -		"linkify-issues": "^2.0.0",
