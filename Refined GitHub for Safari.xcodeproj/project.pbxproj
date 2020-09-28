@@ -9,10 +9,10 @@
 /* Begin PBXBuildFile section */
 		761C2DD2230F0DDF0051B9CB /* resolve-conflicts.js in Resources */ = {isa = PBXBuildFile; fileRef = 761C2DD1230F0DDE0051B9CB /* resolve-conflicts.js */; };
 		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
-		768006A22482C8EB002B7FC1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A12482C8EB002B7FC1 /* KeychainAccess */; };
+		768006A22482C8EB002B7FC1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A12482C8EB002B7FC1 /* SwiftPackageProductDependency */; };
 		768006A42482C909002B7FC1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768006A32482C909002B7FC1 /* Settings.swift */; };
 		768006A52482C909002B7FC1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768006A32482C909002B7FC1 /* Settings.swift */; };
-		768006A72482CABB002B7FC1 /* KeychainAccess in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A62482CABB002B7FC1 /* KeychainAccess */; };
+		768006A72482CABB002B7FC1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */; };
 		768DF43C2440776700037CEF /* refined-github.js in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43B2440776700037CEF /* refined-github.js */; };
 		768DF43E244077CC00037CEF /* refined-github.css in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43D244077CC00037CEF /* refined-github.css */; };
 		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
@@ -102,7 +102,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768006A22482C8EB002B7FC1 /* KeychainAccess in Frameworks */,
+				768006A22482C8EB002B7FC1 /* BuildFile in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -124,7 +124,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768006A72482CABB002B7FC1 /* KeychainAccess in Frameworks */,
+				768006A72482CABB002B7FC1 /* BuildFile in Frameworks */,
 				76E22A75221A414E00C30087 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -239,7 +239,7 @@
 			);
 			name = "Refined GitHub for Safari";
 			packageProductDependencies = (
-				768006A12482C8EB002B7FC1 /* KeychainAccess */,
+				768006A12482C8EB002B7FC1 /* SwiftPackageProductDependency */,
 			);
 			productName = "Refined GitHub for Safari";
 			productReference = 76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */;
@@ -295,7 +295,7 @@
 			);
 			name = "Refined GitHub for Safari Extension";
 			packageProductDependencies = (
-				768006A62482CABB002B7FC1 /* KeychainAccess */,
+				768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */,
 			);
 			productName = "Refined GitHub for Safari Extension";
 			productReference = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */;
@@ -347,7 +347,7 @@
 			);
 			mainGroup = 76E22A3D221A414B00C30087;
 			packageReferences = (
-				768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */,
+				768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */,
 			);
 			productRefGroup = 76E22A47221A414C00C30087 /* Products */;
 			projectDirPath = "";
@@ -594,7 +594,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Refined GitHub Extension/Info.plist";
@@ -603,7 +603,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.12;
+				MARKETING_VERSION = 2.1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -619,7 +619,7 @@
 				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_Extension.entitlements";
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Refined GitHub Extension/Info.plist";
@@ -628,7 +628,7 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.12;
+				MARKETING_VERSION = 2.1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -646,7 +646,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Refined GitHub/Info.plist";
@@ -654,7 +654,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.12;
+				MARKETING_VERSION = 2.1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -671,7 +671,7 @@
 				CODE_SIGN_IDENTITY = "Mac Developer";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				DEVELOPMENT_TEAM = "";
 				ENABLE_HARDENED_RUNTIME = YES;
 				INFOPLIST_FILE = "Refined GitHub/Info.plist";
@@ -679,7 +679,7 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.12;
+				MARKETING_VERSION = 2.1.13;
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -694,7 +694,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				INFOPLIST_FILE = "Refined GitHubTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -715,7 +715,7 @@
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				INFOPLIST_FILE = "Refined GitHubTests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -735,7 +735,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				INFOPLIST_FILE = "Refined GitHubUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -755,7 +755,7 @@
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 61;
+				CURRENT_PROJECT_VERSION = 62;
 				INFOPLIST_FILE = "Refined GitHubUITests/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -820,7 +820,7 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */ = {
+		768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
 			requirement = {
@@ -831,14 +831,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		768006A12482C8EB002B7FC1 /* KeychainAccess */ = {
+		768006A12482C8EB002B7FC1 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			package = 768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */;
 			productName = KeychainAccess;
 		};
-		768006A62482CABB002B7FC1 /* KeychainAccess */ = {
+		768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 768006A02482C8EB002B7FC1 /* XCRemoteSwiftPackageReference "KeychainAccess" */;
+			package = 768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */;
 			productName = KeychainAccess;
 		};
 /* End XCSwiftPackageProductDependency section */
