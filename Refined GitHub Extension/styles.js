@@ -6,11 +6,11 @@
    document.head.appendChild(link);
  }
 
-(function inject () {
-  if (document.head) {
+const observer = new MutationObserver(() => {
+  if (document.body) {
     addStylesheet("refined-github.css");
     addStylesheet("safari.css");
-  } else {
-    setTimeout(inject, 100);
+    observer.disconnect();
   }
-})();
+});
+observer.observe(document, {childList: true, subtree: true})
