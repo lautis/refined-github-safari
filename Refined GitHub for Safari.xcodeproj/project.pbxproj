@@ -15,6 +15,7 @@
 		768006A72482CABB002B7FC1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */; };
 		768DF43C2440776700037CEF /* refined-github.js in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43B2440776700037CEF /* refined-github.js */; };
 		768DF43E244077CC00037CEF /* refined-github.css in Resources */ = {isa = PBXBuildFile; fileRef = 768DF43D244077CC00037CEF /* refined-github.css */; };
+		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
 		76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A4B221A414C00C30087 /* AppDelegate.swift */; };
 		76E22A4F221A414C00C30087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A4D221A414C00C30087 /* Main.storyboard */; };
 		76E22A51221A414C00C30087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A50221A414C00C30087 /* ViewController.swift */; };
@@ -365,6 +366,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */,
 				767D0346222184FA0025A3B7 /* Credits.html in Resources */,
 				76E22A53221A414E00C30087 /* Assets.xcassets in Resources */,
 				76E22A4F221A414C00C30087 /* Main.storyboard in Resources */,
