@@ -8,7 +8,7 @@
 
 const observer = new MutationObserver(() => {
   if (document.body) {
-    addStylesheet("refined-github.css");
+    addStylesheet("build/refined-github.css");
     addStylesheet("safari.css");
     observer.disconnect();
   }

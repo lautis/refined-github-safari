@@ -38,7 +38,7 @@
 			</dict>
 			<dict>
 				<key>Script</key>
-				<string>refined-github.js</string>
+				<string>build/refined-github.js</string>
 			</dict>
 			<dict>
 				<key>Script</key>
@@ -46,7 +46,7 @@
 			</dict>
 			<dict>
 				<key>Script</key>
-				<string>resolve-conflicts.js</string>
+				<string>build/resolve-conflicts.js</string>
 			</dict>
 		</array>
 		<key>SFSafariWebsiteAccess</key>
