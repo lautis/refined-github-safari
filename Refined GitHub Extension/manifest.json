@@ -1,0 +1,54 @@
+{
+  "name": "Refined GitHub for Safari",
+  "version": "2.1.18",
+  "description": "Simplifies the GitHub interface and adds useful features",
+  "homepage_url": "https://github.com/lautis/refined-github-safari",
+  "manifest_version": 2,
+  "permissions": [
+    "storage",
+    "contextMenus",
+    "activeTab",
+    "alarms",
+    "https://github.com/*",
+    "https://api.github.com/*"
+  ],
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+  "optional_permissions": [
+    "*://*/*"
+  ],
+  "icons": {
+    "128": "icon.png"
+  },
+  "options_ui": {
+    "chrome_style": true,
+    "page": "options.html"
+  },
+  "background": {
+    "scripts": [
+      "build/browser-polyfill.js",
+      "build/background.js"
+    ]
+  },
+  "content_scripts": [
+    {
+      "run_at": "document_start",
+      "matches": [
+        "https://github.com/*",
+        "https://gist.github.com/*"
+      ],
+      "css": [
+        "build/refined-github.css",
+        "safari.css"
+      ],
+      "js": [
+        "build/browser-polyfill.js",
+        "build/refined-github.js"
+      ]
+    }
+  ],
+  "web_accessible_resources": [
+    "build/resolve-conflicts.js"
+  ]
+}

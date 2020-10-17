@@ -10,7 +10,7 @@
     "refined-github:patch": "cd refined-github && npm install linkify-urls@3.1.0-nolookbehind linkify-issues@2.0.0-nolookbehind",
     "refined-github:install": "cd refined-github && npm install --frozen-lockfile",
     "refined-github:build": "cd refined-github && npm run build",
-    "refined-github:copy": "cp -R refined-github/distribution/build Refined\\ GitHub\\ Extension/build",
+    "refined-github:copy": "cp -R refined-github/distribution/{build,icon.png,options.html} Refined\\ GitHub\\ Extension/",
     "refined-github:restore": "cd refined-github && git reset --hard"
   },
   "author": "Ville Lautanala <lautis@gmail.com>",

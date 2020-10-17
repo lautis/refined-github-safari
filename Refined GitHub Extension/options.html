@@ -1,0 +1,71 @@
+<!doctype html>
+<meta charset="utf-8">
+<title>Refined GitHub options</title>
+<link rel="stylesheet" href="build/options.css">
+<form id="options-form" class="detail-view-container">
+	<p>
+		<label>
+			<strong>Personal token</strong> <sup>(optional)</sup><br>
+			<a href="https://github.com/sindresorhus/refined-github/search?q=github-helpers/api" target="_blank">Some features</a> may not work without it.
+			<a id="personal-token-link" href="https://github.com/settings/tokens/new?description=Refined%20GitHub&scopes=repo" target="_blank">Generate one</a>.
+			<!-- placeholder is set to enable use of :placeholder-shown CSS selector -->
+			<input type="text" name="personalToken" spellcheck="false" autocomplete="off" pattern="[\da-f]{40}" placeholder=" ">
+		</label>
+	</p>
+
+	<hr>
+
+	<p>
+		<strong>GitHub Enterprise</strong><br>
+		If you're a GitHub Enterprise user, visit your Enterprise site, right-click on <a href="https://user-images.githubusercontent.com/1402241/32874388-e0c64150-cacc-11e7-9a50-eae3727fd3c2.png" target="_blank">Refined GitHub's icon in the toolbar</a> and select <strong>Enable Refined GitHub on this domain</strong>.
+	</p>
+
+	<hr>
+
+	<p>
+		<label>
+			<strong>Custom CSS</strong> (useful to undo unwanted styles)<br>
+			<textarea name="customCSS" rows="2" spellcheck="false"></textarea>
+		</label>
+	</p>
+
+	<hr id="debugging-position">
+
+	<div>
+		<p>
+			<strong>Features</strong> <br>
+			<em>
+				Want more features? Check out some <a href="https://github.com/sindresorhus/refined-github#related"
+					target="_blank">related GitHub extensions</a> or <a
+					href="https://github.com/sindresorhus/refined-github/blob/master/contributing.md" target="_blank">contribute</a>!
+			</em>
+		</p>
+		<p>
+			<label>
+				<input id="filter-features" type="text" placeholder="Filter features" />
+			</label>
+		</p>
+		<div class="js-features"></div>
+	</div>
+
+	<div id="debugging">
+		<p>
+			<strong>Debugging</strong>
+		</p>
+		<p>
+			<label>
+				<input type="checkbox" name="logging">
+				Show the features enabled on each page in the console
+			</label>
+		</p>
+
+		<p>
+			<label>
+				<button id="clear-cache">Clear cache</button>
+			</label>
+		</p>
+	</div>
+
+</form>
+<script src="build/browser-polyfill.js"></script>
+<script src="build/options.js"></script>
