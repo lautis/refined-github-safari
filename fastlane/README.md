@@ -51,6 +51,11 @@ fastlane mac set_team
 fastlane mac build_release
 ```
 
+### mac sync_version_to_manifest
+```
+fastlane mac sync_version_to_manifest
+```
+
 ### mac bump_version
 ```
 fastlane mac bump_version

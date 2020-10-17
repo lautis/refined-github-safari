@@ -64,6 +64,8 @@ build
 
 xcuserdata/
 Refined GitHub Extension/build
+Refined GitHub Extension/options.html
+Refined GitHub Extension/icon.png
 
 fastlane/report.xml
 

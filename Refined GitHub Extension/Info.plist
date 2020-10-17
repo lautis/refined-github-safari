@@ -15,56 +15,23 @@
 	<key>CFBundleName</key>
 	<string>$(PRODUCT_NAME)</string>
 	<key>CFBundlePackageType</key>
-	<string>XPC!</string>
+	<string>$(PRODUCT_BUNDLE_PACKAGE_TYPE)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>$(MARKETING_VERSION)</string>
 	<key>CFBundleVersion</key>
 	<string>$(CURRENT_PROJECT_VERSION)</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>LSMinimumSystemVersion</key>
 	<string>$(MACOSX_DEPLOYMENT_TARGET)</string>
 	<key>NSExtension</key>
 	<dict>
 		<key>NSExtensionPointIdentifier</key>
-		<string>com.apple.Safari.extension</string>
+		<string>com.apple.Safari.web-extension</string>
 		<key>NSExtensionPrincipalClass</key>
-		<string>$(PRODUCT_MODULE_NAME).SafariExtensionHandler</string>
-		<key>SFSafariContentScript</key>
-		<array>
-			<dict>
-				<key>Script</key>
-				<string>chrome.js</string>
-			</dict>
-			<dict>
-				<key>Script</key>
-				<string>build/refined-github.js</string>
-			</dict>
-			<dict>
-				<key>Script</key>
-				<string>styles.js</string>
-			</dict>
-			<dict>
-				<key>Script</key>
-				<string>build/resolve-conflicts.js</string>
-			</dict>
-		</array>
-		<key>SFSafariWebsiteAccess</key>
-		<dict>
-			<key>Allowed Domains</key>
-			<array>
-				<string>github.com</string>
-				<string>gist.github.com</string>
-			</array>
-			<key>Include Secure Pages</key>
-			<true/>
-			<key>Level</key>
-			<string>Some</string>
-		</dict>
+		<string>$(PRODUCT_MODULE_NAME).SafariWebExtensionHandler</string>
 	</dict>
 	<key>NSHumanReadableCopyright</key>
-	<string>Copyright © 2019 Ville Lautanala. All rights reserved.</string>
-	<key>NSHumanReadableDescription</key>
-	<string>Browser extension that simplifies the GitHub interface and adds useful features.</string>
+	<string>Copyright © 2020 Ville Lautanala. All rights reserved.</string>
+	<key>SFSafariAppExtensionBundleIdentifiersToReplace</key>
+	<string>fi.lautanala.refined-github-extension</string>
 </dict>
 </plist>

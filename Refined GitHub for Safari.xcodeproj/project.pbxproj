@@ -3,63 +3,42 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 52;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		767D0346222184FA0025A3B7 /* Credits.html in Resources */ = {isa = PBXBuildFile; fileRef = 767D0345222184FA0025A3B7 /* Credits.html */; };
-		768006A22482C8EB002B7FC1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A12482C8EB002B7FC1 /* SwiftPackageProductDependency */; };
-		768006A42482C909002B7FC1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768006A32482C909002B7FC1 /* Settings.swift */; };
-		768006A52482C909002B7FC1 /* Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 768006A32482C909002B7FC1 /* Settings.swift */; };
-		768006A72482CABB002B7FC1 /* BuildFile in Frameworks */ = {isa = PBXBuildFile; productRef = 768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */; };
-		7685136E253B3B7C00AC6073 /* build in Resources */ = {isa = PBXBuildFile; fileRef = 7685135D253B3A5400AC6073 /* build */; };
-		76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */; };
-		76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A4B221A414C00C30087 /* AppDelegate.swift */; };
-		76E22A4F221A414C00C30087 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A4D221A414C00C30087 /* Main.storyboard */; };
-		76E22A51221A414C00C30087 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A50221A414C00C30087 /* ViewController.swift */; };
-		76E22A53221A414E00C30087 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A52221A414E00C30087 /* Assets.xcassets */; };
-		76E22A5E221A414E00C30087 /* Refined_GitHubTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A5D221A414E00C30087 /* Refined_GitHubTests.swift */; };
-		76E22A69221A414E00C30087 /* Refined_GitHubUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A68221A414E00C30087 /* Refined_GitHubUITests.swift */; };
-		76E22A70221A414E00C30087 /* Refined GitHub for Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		76E22A75221A414E00C30087 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 76E22A74221A414E00C30087 /* Cocoa.framework */; };
-		76E22A78221A414E00C30087 /* SafariExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */; };
-		76E22A9C221B9A5E00C30087 /* styles.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A9B221B9A5E00C30087 /* styles.js */; };
-		76E22AA0221B9AC800C30087 /* chrome.js in Resources */ = {isa = PBXBuildFile; fileRef = 76E22A9F221B9AC800C30087 /* chrome.js */; };
-		76E86690229AA18C00B9041C /* safari.css in Resources */ = {isa = PBXBuildFile; fileRef = 76E8668F229AA18C00B9041C /* safari.css */; };
+		767A016E253B594400E7CC8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A016D253B594400E7CC8A /* AppDelegate.swift */; };
+		767A0171253B594400E7CC8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 767A016F253B594400E7CC8A /* Main.storyboard */; };
+		767A0173253B594400E7CC8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A0172253B594400E7CC8A /* ViewController.swift */; };
+		767A0175253B594700E7CC8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 767A0174253B594700E7CC8A /* Assets.xcassets */; };
+		767A017C253B594800E7CC8A /* Refined GitHub for Safari Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 767A017B253B594800E7CC8A /* Refined GitHub for Safari Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		767A0181253B594800E7CC8A /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 767A0180253B594800E7CC8A /* Cocoa.framework */; };
+		767A0184253B594800E7CC8A /* SafariWebExtensionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 767A0183253B594800E7CC8A /* SafariWebExtensionHandler.swift */; };
+		767A01AC253B59F400E7CC8A /* build in Resources */ = {isa = PBXBuildFile; fileRef = 767A01A8253B59F400E7CC8A /* build */; };
+		767A01AD253B59F400E7CC8A /* safari.css in Resources */ = {isa = PBXBuildFile; fileRef = 767A01A9253B59F400E7CC8A /* safari.css */; };
+		767A01AE253B59F400E7CC8A /* icon.png in Resources */ = {isa = PBXBuildFile; fileRef = 767A01AA253B59F400E7CC8A /* icon.png */; };
+		767A01AF253B59F400E7CC8A /* options.html in Resources */ = {isa = PBXBuildFile; fileRef = 767A01AB253B59F400E7CC8A /* options.html */; };
+		767A01B3253B5A0000E7CC8A /* manifest.json in Resources */ = {isa = PBXBuildFile; fileRef = 767A01B2253B5A0000E7CC8A /* manifest.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		76E22A5A221A414E00C30087 /* PBXContainerItemProxy */ = {
+		767A017D253B594800E7CC8A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 76E22A3E221A414B00C30087 /* Project object */;
+			containerPortal = 767A0161253B594400E7CC8A /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 76E22A45221A414B00C30087;
-			remoteInfo = "Refined GitHub for Safari";
-		};
-		76E22A65221A414E00C30087 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76E22A3E221A414B00C30087 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 76E22A45221A414B00C30087;
-			remoteInfo = "Refined GitHub for Safari";
-		};
-		76E22A71221A414E00C30087 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 76E22A3E221A414B00C30087 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 76E22A6E221A414E00C30087;
+			remoteGlobalIDString = 767A017A253B594800E7CC8A;
 			remoteInfo = "Refined GitHub for Safari Extension";
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		76E22A89221A414E00C30087 /* Embed App Extensions */ = {
+		767A019D253B594800E7CC8A /* Embed App Extensions */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				76E22A70221A414E00C30087 /* Refined GitHub for Safari Extension.appex in Embed App Extensions */,
+				767A017C253B594800E7CC8A /* Refined GitHub for Safari Extension.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,394 +46,239 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		767D0345222184FA0025A3B7 /* Credits.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = Credits.html; sourceTree = "<group>"; };
-		768006A32482C909002B7FC1 /* Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Settings.swift; sourceTree = "<group>"; };
-		7685135D253B3A5400AC6073 /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
-		76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined GitHub for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub.entitlements; sourceTree = "<group>"; };
-		76E22A4B221A414C00C30087 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		76E22A4E221A414C00C30087 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		76E22A50221A414C00C30087 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		76E22A52221A414E00C30087 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		76E22A54221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A59221A414E00C30087 /* Refined GitHubTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refined GitHubTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A5D221A414E00C30087 /* Refined_GitHubTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refined_GitHubTests.swift; sourceTree = "<group>"; };
-		76E22A5F221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A64221A414E00C30087 /* Refined GitHubUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Refined GitHubUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A68221A414E00C30087 /* Refined_GitHubUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Refined_GitHubUITests.swift; sourceTree = "<group>"; };
-		76E22A6A221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Refined GitHub for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
-		76E22A74221A414E00C30087 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
-		76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariExtensionHandler.swift; sourceTree = "<group>"; };
-		76E22A7E221A414E00C30087 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		76E22A83221A414E00C30087 /* Refined_GitHub_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub_Extension.entitlements; sourceTree = "<group>"; };
-		76E22A9B221B9A5E00C30087 /* styles.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = styles.js; sourceTree = "<group>"; };
-		76E22A9F221B9AC800C30087 /* chrome.js */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.javascript; path = chrome.js; sourceTree = "<group>"; };
-		76E8668F229AA18C00B9041C /* safari.css */ = {isa = PBXFileReference; fileEncoding = 4; indentWidth = 2; lastKnownFileType = text.css; path = safari.css; sourceTree = "<group>"; tabWidth = 2; usesTabs = 0; };
+		767A0169253B594400E7CC8A /* Refined GitHub for Safari.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Refined GitHub for Safari.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		767A016C253B594400E7CC8A /* Refined_GitHub_for_Safari.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub_for_Safari.entitlements; sourceTree = "<group>"; };
+		767A016D253B594400E7CC8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		767A0170253B594400E7CC8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		767A0172253B594400E7CC8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		767A0174253B594700E7CC8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		767A0176253B594700E7CC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767A017B253B594800E7CC8A /* Refined GitHub for Safari Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Refined GitHub for Safari Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		767A0180253B594800E7CC8A /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		767A0183253B594800E7CC8A /* SafariWebExtensionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SafariWebExtensionHandler.swift; sourceTree = "<group>"; };
+		767A0196253B594800E7CC8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		767A0197253B594800E7CC8A /* Refined_GitHub_for_Safari_Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Refined_GitHub_for_Safari_Extension.entitlements; sourceTree = "<group>"; };
+		767A01A8253B59F400E7CC8A /* build */ = {isa = PBXFileReference; lastKnownFileType = folder; path = build; sourceTree = "<group>"; };
+		767A01A9253B59F400E7CC8A /* safari.css */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.css; path = safari.css; sourceTree = "<group>"; };
+		767A01AA253B59F400E7CC8A /* icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = icon.png; sourceTree = "<group>"; };
+		767A01AB253B59F400E7CC8A /* options.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = options.html; sourceTree = "<group>"; };
+		767A01B2253B5A0000E7CC8A /* manifest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = manifest.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		76E22A43221A414B00C30087 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				768006A22482C8EB002B7FC1 /* BuildFile in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76E22A56221A414E00C30087 /* Frameworks */ = {
+		767A0166253B594400E7CC8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76E22A61221A414E00C30087 /* Frameworks */ = {
+		767A0178253B594800E7CC8A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76E22A6C221A414E00C30087 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				768006A72482CABB002B7FC1 /* BuildFile in Frameworks */,
-				76E22A75221A414E00C30087 /* Cocoa.framework in Frameworks */,
+				767A0181253B594800E7CC8A /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		767D0344222184810025A3B7 /* Resources */ = {
+		767A0160253B594400E7CC8A = {
 			isa = PBXGroup;
 			children = (
-				767D0345222184FA0025A3B7 /* Credits.html */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		76E22A3D221A414B00C30087 = {
-			isa = PBXGroup;
-			children = (
-				76E22A48221A414C00C30087 /* Refined GitHub */,
-				76E22A5C221A414E00C30087 /* Refined GitHubTests */,
-				76E22A67221A414E00C30087 /* Refined GitHubUITests */,
-				76E22A76221A414E00C30087 /* Refined GitHub Extension */,
-				76E22A73221A414E00C30087 /* Frameworks */,
-				76E22A47221A414C00C30087 /* Products */,
+				767A016B253B594400E7CC8A /* Refined GitHub */,
+				767A0182253B594800E7CC8A /* Refined GitHub Extension */,
+				767A017F253B594800E7CC8A /* Frameworks */,
+				767A016A253B594400E7CC8A /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		76E22A47221A414C00C30087 /* Products */ = {
+		767A016A253B594400E7CC8A /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */,
-				76E22A59221A414E00C30087 /* Refined GitHubTests.xctest */,
-				76E22A64221A414E00C30087 /* Refined GitHubUITests.xctest */,
-				76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */,
+				767A0169253B594400E7CC8A /* Refined GitHub for Safari.app */,
+				767A017B253B594800E7CC8A /* Refined GitHub for Safari Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		76E22A48221A414C00C30087 /* Refined GitHub */ = {
+		767A016B253B594400E7CC8A /* Refined GitHub */ = {
 			isa = PBXGroup;
 			children = (
-				767D0344222184810025A3B7 /* Resources */,
-				76E22A49221A414C00C30087 /* Refined_GitHub.entitlements */,
-				76E22A4B221A414C00C30087 /* AppDelegate.swift */,
-				76E22A4D221A414C00C30087 /* Main.storyboard */,
-				76E22A50221A414C00C30087 /* ViewController.swift */,
-				76E22A52221A414E00C30087 /* Assets.xcassets */,
-				76E22A54221A414E00C30087 /* Info.plist */,
-				768006A32482C909002B7FC1 /* Settings.swift */,
+				767A016C253B594400E7CC8A /* Refined_GitHub_for_Safari.entitlements */,
+				767A016D253B594400E7CC8A /* AppDelegate.swift */,
+				767A016F253B594400E7CC8A /* Main.storyboard */,
+				767A0172253B594400E7CC8A /* ViewController.swift */,
+				767A0174253B594700E7CC8A /* Assets.xcassets */,
+				767A0176253B594700E7CC8A /* Info.plist */,
 			);
 			path = "Refined GitHub";
 			sourceTree = "<group>";
 		};
-		76E22A5C221A414E00C30087 /* Refined GitHubTests */ = {
+		767A017F253B594800E7CC8A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				76E22A5D221A414E00C30087 /* Refined_GitHubTests.swift */,
-				76E22A5F221A414E00C30087 /* Info.plist */,
-			);
-			path = "Refined GitHubTests";
-			sourceTree = "<group>";
-		};
-		76E22A67221A414E00C30087 /* Refined GitHubUITests */ = {
-			isa = PBXGroup;
-			children = (
-				76E22A68221A414E00C30087 /* Refined_GitHubUITests.swift */,
-				76E22A6A221A414E00C30087 /* Info.plist */,
-			);
-			path = "Refined GitHubUITests";
-			sourceTree = "<group>";
-		};
-		76E22A73221A414E00C30087 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				76E22A74221A414E00C30087 /* Cocoa.framework */,
+				767A0180253B594800E7CC8A /* Cocoa.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		76E22A76221A414E00C30087 /* Refined GitHub Extension */ = {
+		767A0182253B594800E7CC8A /* Refined GitHub Extension */ = {
 			isa = PBXGroup;
 			children = (
-				7685135D253B3A5400AC6073 /* build */,
-				76E22A9F221B9AC800C30087 /* chrome.js */,
-				76E22A9B221B9A5E00C30087 /* styles.js */,
-				76E8668F229AA18C00B9041C /* safari.css */,
-				76E22A77221A414E00C30087 /* SafariExtensionHandler.swift */,
-				76E22A7E221A414E00C30087 /* Info.plist */,
-				76E22A83221A414E00C30087 /* Refined_GitHub_Extension.entitlements */,
+				767A01A7253B599400E7CC8A /* Resources */,
+				767A0183253B594800E7CC8A /* SafariWebExtensionHandler.swift */,
+				767A01B2253B5A0000E7CC8A /* manifest.json */,
+				767A0196253B594800E7CC8A /* Info.plist */,
+				767A0197253B594800E7CC8A /* Refined_GitHub_for_Safari_Extension.entitlements */,
 			);
 			path = "Refined GitHub Extension";
+			sourceTree = "<group>";
+		};
+		767A01A7253B599400E7CC8A /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				767A01A8253B59F400E7CC8A /* build */,
+				767A01AA253B59F400E7CC8A /* icon.png */,
+				767A01AB253B59F400E7CC8A /* options.html */,
+				767A01A9253B59F400E7CC8A /* safari.css */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		76E22A45221A414B00C30087 /* Refined GitHub for Safari */ = {
+		767A0168253B594400E7CC8A /* Refined GitHub for Safari */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A8A221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari" */;
+			buildConfigurationList = 767A019E253B594800E7CC8A /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari" */;
 			buildPhases = (
-				76E22A42221A414B00C30087 /* Sources */,
-				76E22A43221A414B00C30087 /* Frameworks */,
-				76E22A44221A414B00C30087 /* Resources */,
-				76E22A89221A414E00C30087 /* Embed App Extensions */,
+				767A0165253B594400E7CC8A /* Sources */,
+				767A0166253B594400E7CC8A /* Frameworks */,
+				767A0167253B594400E7CC8A /* Resources */,
+				767A019D253B594800E7CC8A /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				76E22A72221A414E00C30087 /* PBXTargetDependency */,
+				767A017E253B594800E7CC8A /* PBXTargetDependency */,
 			);
 			name = "Refined GitHub for Safari";
-			packageProductDependencies = (
-				768006A12482C8EB002B7FC1 /* SwiftPackageProductDependency */,
-			);
 			productName = "Refined GitHub for Safari";
-			productReference = 76E22A46221A414C00C30087 /* Refined GitHub for Safari.app */;
+			productReference = 767A0169253B594400E7CC8A /* Refined GitHub for Safari.app */;
 			productType = "com.apple.product-type.application";
 		};
-		76E22A58221A414E00C30087 /* Refined GitHubTests */ = {
+		767A017A253B594800E7CC8A /* Refined GitHub for Safari Extension */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A8D221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubTests" */;
+			buildConfigurationList = 767A019A253B594800E7CC8A /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari Extension" */;
 			buildPhases = (
-				76E22A55221A414E00C30087 /* Sources */,
-				76E22A56221A414E00C30087 /* Frameworks */,
-				76E22A57221A414E00C30087 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				76E22A5B221A414E00C30087 /* PBXTargetDependency */,
-			);
-			name = "Refined GitHubTests";
-			productName = "Refined GitHubTests";
-			productReference = 76E22A59221A414E00C30087 /* Refined GitHubTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
-		76E22A63221A414E00C30087 /* Refined GitHubUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A90221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubUITests" */;
-			buildPhases = (
-				76E22A60221A414E00C30087 /* Sources */,
-				76E22A61221A414E00C30087 /* Frameworks */,
-				76E22A62221A414E00C30087 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				76E22A66221A414E00C30087 /* PBXTargetDependency */,
-			);
-			name = "Refined GitHubUITests";
-			productName = "Refined GitHubUITests";
-			productReference = 76E22A64221A414E00C30087 /* Refined GitHubUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
-		76E22A6E221A414E00C30087 /* Refined GitHub for Safari Extension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 76E22A86221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari Extension" */;
-			buildPhases = (
-				76E22A6B221A414E00C30087 /* Sources */,
-				76E22A6C221A414E00C30087 /* Frameworks */,
-				76E22A6D221A414E00C30087 /* Resources */,
+				767A0177253B594800E7CC8A /* Sources */,
+				767A0178253B594800E7CC8A /* Frameworks */,
+				767A0179253B594800E7CC8A /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = "Refined GitHub for Safari Extension";
-			packageProductDependencies = (
-				768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */,
-			);
 			productName = "Refined GitHub for Safari Extension";
-			productReference = 76E22A6F221A414E00C30087 /* Refined GitHub for Safari Extension.appex */;
+			productReference = 767A017B253B594800E7CC8A /* Refined GitHub for Safari Extension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		76E22A3E221A414B00C30087 /* Project object */ = {
+		767A0161253B594400E7CC8A /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1010;
+				LastSwiftUpdateCheck = 1200;
 				LastUpgradeCheck = 1200;
-				ORGANIZATIONNAME = "Ville Lautanala";
 				TargetAttributes = {
-					76E22A45221A414B00C30087 = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.HardenedRuntime = {
-								enabled = 1;
-							};
-						};
+					767A0168253B594400E7CC8A = {
+						CreatedOnToolsVersion = 12.0.1;
 					};
-					76E22A58221A414E00C30087 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 76E22A45221A414B00C30087;
-					};
-					76E22A63221A414E00C30087 = {
-						CreatedOnToolsVersion = 10.1;
-						TestTargetID = 76E22A45221A414B00C30087;
-					};
-					76E22A6E221A414E00C30087 = {
-						CreatedOnToolsVersion = 10.1;
-						SystemCapabilities = {
-							com.apple.HardenedRuntime = {
-								enabled = 1;
-							};
-						};
+					767A017A253B594800E7CC8A = {
+						CreatedOnToolsVersion = 12.0.1;
 					};
 				};
 			};
-			buildConfigurationList = 76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined GitHub for Safari" */;
-			compatibilityVersion = "Xcode 11.0";
+			buildConfigurationList = 767A0164253B594400E7CC8A /* Build configuration list for PBXProject "Refined GitHub for Safari" */;
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
 				Base,
 			);
-			mainGroup = 76E22A3D221A414B00C30087;
-			packageReferences = (
-				768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */,
-			);
-			productRefGroup = 76E22A47221A414C00C30087 /* Products */;
+			mainGroup = 767A0160253B594400E7CC8A;
+			productRefGroup = 767A016A253B594400E7CC8A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				76E22A45221A414B00C30087 /* Refined GitHub for Safari */,
-				76E22A58221A414E00C30087 /* Refined GitHubTests */,
-				76E22A63221A414E00C30087 /* Refined GitHubUITests */,
-				76E22A6E221A414E00C30087 /* Refined GitHub for Safari Extension */,
+				767A0168253B594400E7CC8A /* Refined GitHub for Safari */,
+				767A017A253B594800E7CC8A /* Refined GitHub for Safari Extension */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		76E22A44221A414B00C30087 /* Resources */ = {
+		767A0167253B594400E7CC8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E22A4A221A414C00C30087 /* Refined_GitHub.entitlements in Resources */,
-				767D0346222184FA0025A3B7 /* Credits.html in Resources */,
-				76E22A53221A414E00C30087 /* Assets.xcassets in Resources */,
-				76E22A4F221A414C00C30087 /* Main.storyboard in Resources */,
+				767A0175253B594700E7CC8A /* Assets.xcassets in Resources */,
+				767A0171253B594400E7CC8A /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76E22A57221A414E00C30087 /* Resources */ = {
+		767A0179253B594800E7CC8A /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76E22A62221A414E00C30087 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76E22A6D221A414E00C30087 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76E22A9C221B9A5E00C30087 /* styles.js in Resources */,
-				7685136E253B3B7C00AC6073 /* build in Resources */,
-				76E86690229AA18C00B9041C /* safari.css in Resources */,
-				76E22AA0221B9AC800C30087 /* chrome.js in Resources */,
+				767A01AC253B59F400E7CC8A /* build in Resources */,
+				767A01AD253B59F400E7CC8A /* safari.css in Resources */,
+				767A01B3253B5A0000E7CC8A /* manifest.json in Resources */,
+				767A01AE253B59F400E7CC8A /* icon.png in Resources */,
+				767A01AF253B59F400E7CC8A /* options.html in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		76E22A42221A414B00C30087 /* Sources */ = {
+		767A0165253B594400E7CC8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				768006A42482C909002B7FC1 /* Settings.swift in Sources */,
-				76E22A51221A414C00C30087 /* ViewController.swift in Sources */,
-				76E22A4C221A414C00C30087 /* AppDelegate.swift in Sources */,
+				767A0173253B594400E7CC8A /* ViewController.swift in Sources */,
+				767A016E253B594400E7CC8A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		76E22A55221A414E00C30087 /* Sources */ = {
+		767A0177253B594800E7CC8A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				76E22A5E221A414E00C30087 /* Refined_GitHubTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76E22A60221A414E00C30087 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				76E22A69221A414E00C30087 /* Refined_GitHubUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		76E22A6B221A414E00C30087 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				768006A52482C909002B7FC1 /* Settings.swift in Sources */,
-				76E22A78221A414E00C30087 /* SafariExtensionHandler.swift in Sources */,
+				767A0184253B594800E7CC8A /* SafariWebExtensionHandler.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		76E22A5B221A414E00C30087 /* PBXTargetDependency */ = {
+		767A017E253B594800E7CC8A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 76E22A45221A414B00C30087 /* Refined GitHub for Safari */;
-			targetProxy = 76E22A5A221A414E00C30087 /* PBXContainerItemProxy */;
-		};
-		76E22A66221A414E00C30087 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 76E22A45221A414B00C30087 /* Refined GitHub for Safari */;
-			targetProxy = 76E22A65221A414E00C30087 /* PBXContainerItemProxy */;
-		};
-		76E22A72221A414E00C30087 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 76E22A6E221A414E00C30087 /* Refined GitHub for Safari Extension */;
-			targetProxy = 76E22A71221A414E00C30087 /* PBXContainerItemProxy */;
+			target = 767A017A253B594800E7CC8A /* Refined GitHub for Safari Extension */;
+			targetProxy = 767A017D253B594800E7CC8A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		76E22A4D221A414C00C30087 /* Main.storyboard */ = {
+		767A016F253B594400E7CC8A /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				76E22A4E221A414C00C30087 /* Base */,
+				767A0170253B594400E7CC8A /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
@@ -462,7 +286,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		76E22A84221A414E00C30087 /* Debug */ = {
+		767A0198253B594800E7CC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -495,7 +319,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -514,7 +337,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
@@ -524,7 +347,7 @@
 			};
 			name = Debug;
 		};
-		76E22A85221A414E00C30087 /* Release */ = {
+		767A0199253B594800E7CC8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -557,7 +380,6 @@
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGN_IDENTITY = "-";
 				COPY_PHASE_STRIP = NO;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
@@ -570,7 +392,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = macosx;
@@ -579,12 +401,11 @@
 			};
 			name = Release;
 		};
-		76E22A87221A414E00C30087 /* Debug */ = {
+		767A019B253B594800E7CC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_for_Safari_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 67;
 				DEVELOPMENT_TEAM = "";
@@ -595,21 +416,20 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.18;
-				PRODUCT_BUNDLE_IDENTIFIER = "refined-github-extension";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.refined-github-web-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		76E22A88221A414E00C30087 /* Release */ = {
+		767A019C253B594800E7CC8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_Extension.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub Extension/Refined_GitHub_for_Safari_Extension.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 67;
 				DEVELOPMENT_TEAM = "";
@@ -620,22 +440,22 @@
 					"@executable_path/../Frameworks",
 					"@executable_path/../../../../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.18;
-				PRODUCT_BUNDLE_IDENTIFIER = "refined-github-extension";
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.8;
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.refined-github-web-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 			};
 			name = Release;
 		};
-		76E22A8B221A414E00C30087 /* Debug */ = {
+		767A019F253B594800E7CC8A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Refined GitHub/Refined_GitHub.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub/Refined_GitHub_for_Safari.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 67;
@@ -646,21 +466,21 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.18;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 			};
 			name = Debug;
 		};
-		76E22A8C221A414E00C30087 /* Release */ = {
+		767A01A0253B594800E7CC8A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_ENTITLEMENTS = "Refined GitHub/Refined_GitHub.entitlements";
-				CODE_SIGN_IDENTITY = "Mac Developer";
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "Refined GitHub/Refined_GitHub_for_Safari.entitlements";
 				CODE_SIGN_STYLE = Automatic;
 				COMBINE_HIDPI_IMAGES = YES;
 				CURRENT_PROJECT_VERSION = 67;
@@ -671,169 +491,45 @@
 					"$(inherited)",
 					"@executable_path/../Frameworks",
 				);
-				MARKETING_VERSION = 2.1.18;
+				MACOSX_DEPLOYMENT_TARGET = 10.14;
+				MARKETING_VERSION = 2.1.8;
 				PRODUCT_BUNDLE_IDENTIFIER = "refined-github";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
-			};
-			name = Release;
-		};
-		76E22A8E221A414E00C30087 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 67;
-				INFOPLIST_FILE = "Refined GitHubTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined GitHub.app/Contents/MacOS/Refined GitHub for Safari";
-			};
-			name = Debug;
-		};
-		76E22A8F221A414E00C30087 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 67;
-				INFOPLIST_FILE = "Refined GitHubTests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubTests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Refined GitHub.app/Contents/MacOS/Refined GitHub for Safari";
-			};
-			name = Release;
-		};
-		76E22A91221A414E00C30087 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 67;
-				INFOPLIST_FILE = "Refined GitHubUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Refined GitHub for Safari";
-			};
-			name = Debug;
-		};
-		76E22A92221A414E00C30087 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				COMBINE_HIDPI_IMAGES = YES;
-				CURRENT_PROJECT_VERSION = 67;
-				INFOPLIST_FILE = "Refined GitHubUITests/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/../Frameworks",
-					"@loader_path/../Frameworks",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.Refined-GitHubUITests";
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
-				TEST_TARGET_NAME = "Refined GitHub for Safari";
 			};
 			name = Release;
 		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		76E22A41221A414B00C30087 /* Build configuration list for PBXProject "Refined GitHub for Safari" */ = {
+		767A0164253B594400E7CC8A /* Build configuration list for PBXProject "Refined GitHub for Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76E22A84221A414E00C30087 /* Debug */,
-				76E22A85221A414E00C30087 /* Release */,
+				767A0198253B594800E7CC8A /* Debug */,
+				767A0199253B594800E7CC8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E22A86221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari Extension" */ = {
+		767A019A253B594800E7CC8A /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari Extension" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76E22A87221A414E00C30087 /* Debug */,
-				76E22A88221A414E00C30087 /* Release */,
+				767A019B253B594800E7CC8A /* Debug */,
+				767A019C253B594800E7CC8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		76E22A8A221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari" */ = {
+		767A019E253B594800E7CC8A /* Build configuration list for PBXNativeTarget "Refined GitHub for Safari" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				76E22A8B221A414E00C30087 /* Debug */,
-				76E22A8C221A414E00C30087 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		76E22A8D221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				76E22A8E221A414E00C30087 /* Debug */,
-				76E22A8F221A414E00C30087 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		76E22A90221A414E00C30087 /* Build configuration list for PBXNativeTarget "Refined GitHubUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				76E22A91221A414E00C30087 /* Debug */,
-				76E22A92221A414E00C30087 /* Release */,
+				767A019F253B594800E7CC8A /* Debug */,
+				767A01A0253B594800E7CC8A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCRemoteSwiftPackageReference section */
-		768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/kishikawakatsumi/KeychainAccess";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
-/* End XCRemoteSwiftPackageReference section */
-
-/* Begin XCSwiftPackageProductDependency section */
-		768006A12482C8EB002B7FC1 /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */;
-			productName = KeychainAccess;
-		};
-		768006A62482CABB002B7FC1 /* SwiftPackageProductDependency */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = 768006A02482C8EB002B7FC1 /* RemoteSwiftPackageReference */;
-			productName = KeychainAccess;
-		};
-/* End XCSwiftPackageProductDependency section */
 	};
-	rootObject = 76E22A3E221A414B00C30087 /* Project object */;
+	rootObject = 767A0161253B594400E7CC8A /* Project object */;
 }
