@@ -99,6 +99,15 @@ platform :mac do
     zip_app
   end
 
+  lane :sync_version_to_manifest do
+    ['package.json', 'Refined GitHub Extension/manifest.json'].each do |file|
+      file_path = File.join(project_path, file)
+      data = JSON.parse(File.read(file_path))
+      data['version'] = marketing_version_number
+      File.write(file_path, JSON.pretty_generate(data, indent: '  ') + "\n")
+    end
+  end
+
   lane :bump_version do
     increment_build_number_in_xcodeproj
     [APP_NAME, "#{APP_NAME} Extension"].each do |target|
@@ -107,7 +116,13 @@ platform :mac do
         target: target
       )
     end
-    commit_version_bump(message: "Version #{marketing_version_number}")
+
+    sync_version_to_manifest
+
+    commit_version_bump(
+      message: "Version #{marketing_version_number}",
+      include: ['package.json', 'Refined GitHub Extension/manifest.json']
+    )
   end
 
   lane :github_release do
