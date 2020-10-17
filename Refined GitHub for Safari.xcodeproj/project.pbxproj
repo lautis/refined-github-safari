@@ -418,7 +418,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 2.1.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "refined-github-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.refined-github-web-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
@@ -442,7 +442,7 @@
 				);
 				MACOSX_DEPLOYMENT_TARGET = 10.14;
 				MARKETING_VERSION = 2.1.8;
-				PRODUCT_BUNDLE_IDENTIFIER = "refined-github-extension";
+				PRODUCT_BUNDLE_IDENTIFIER = "fi.lautanala.refined-github-web-extension";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;

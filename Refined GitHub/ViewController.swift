@@ -10,7 +10,7 @@ import SafariServices.SFSafariApplication
 import SafariServices.SFSafariExtensionManager
 
 let appName = "Refined GitHub for Safari"
-let extensionBundleIdentifier = "fi.lautanala.refined-github-extension"
+let extensionBundleIdentifier = "fi.lautanala.refined-github-web-extension"
 
 class ViewController: NSViewController {
 
