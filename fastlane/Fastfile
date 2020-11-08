@@ -107,7 +107,10 @@ platform :mac do
         target: target
       )
     end
-    commit_version_bump(message: "Version #{marketing_version_number}")
+    commit_version_bump(
+      message: "Version #{marketing_version_number}",
+      xcodeproj: 'Refined GitHub for Safari.xcodeproj'
+    )
   end
 
   lane :github_release do
