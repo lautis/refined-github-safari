@@ -11,7 +11,7 @@ This is a Safari version of [Refined GitHub](https://github.com/sindresorhus/ref
 Or using homebrew:
 
 ```sh
-brew cask install refined-github-safari
+brew install --cask refined-github-safari
 ```
 
 After this, start the app, and enable Refined Github for Safari in Safari Extensions Preferences.
