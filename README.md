@@ -1,8 +1,6 @@
-# Refined GitHub for Safari
+# DEPRECATED: Refined GitHub for Safari
 
-> Browser extension that simplifies the GitHub interface and adds useful features
-
-This is a Safari version of [Refined GitHub](https://github.com/sindresorhus/refined-github).
+This project is no longer required. The original [Refined GitHub](https://github.com/sindresorhus/refined-github) is available on [Mac App Store](https://apps.apple.com/app/id1519867270).
 
 ## Install
 
